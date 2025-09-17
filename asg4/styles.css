@@ -57,7 +57,7 @@ h2 {
 ul, li {
 	font-size: 20px;
 	color: darked;
-	list-style-type: square;
+	list-style-type: circle;
 	line-height: 1.6;
 	font-weight: bold;
 }
