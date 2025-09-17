@@ -53,3 +53,11 @@ h2 {
 
 
 }
+
+ul, li {
+	font-size: 20px;
+	color: darked;
+	list-style-type: square;
+	line-height: 1.6;
+	font-weight: bold;
+}
