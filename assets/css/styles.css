@@ -13,3 +13,13 @@ body {
      box-shadow: 10px 10px 10px rgba(0,0,0,.5);
      background-color: #e1ede8;
 }
+h1 {
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: heavy;
+      font-style: normal; 	
+     color: #555555;
+     font-size:3em;
+     margin:0;
+	text-align: center;
+     }
