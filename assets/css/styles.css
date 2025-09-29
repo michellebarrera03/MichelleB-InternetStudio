@@ -32,6 +32,7 @@ p {
 	margin-top: 10px;
 	margin-left: 60px;
 	font-size: 2em;
+	text-align: center;
       }
 ul, li  { 
 
@@ -46,6 +47,7 @@ ul, li  {
 }
 
 ul, li {
+	text-align: center;
       font-weight: normal;
 
 
