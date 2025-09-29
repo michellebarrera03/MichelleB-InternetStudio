@@ -34,9 +34,12 @@ p {
 	font-size: 2em;
       }
 ul, li  { 
-	
+
+      font-family: "Turret Road", sans-serif;
+      font-weight: 800;
+      font-style: normal;
       font-size: 20px;
-       color: darked;
+      color: darked;
        list-style-type: disc;
        line-height: 1.6;
 }
