@@ -37,20 +37,16 @@ p {
 ul, li  { 
 
       font-family: "Turret Road", sans-serif;
+      text-align: center;
       font-weight: 800;
       font-style: normal;
       font-size: 30px;
       color: darked;
-       list-style-type: disc;
-       line-height: 1.6;
+      list-style-type: disc;
+      line-height: 1.6;
 	
 }
 
-ul, li {
-	
-      font-weight: normal;
-
-}
 
 img{
 	display: block;
