@@ -82,7 +82,7 @@ p {
 body {
      width:80%;
      padding: 20px;
-     margin: 0 auto;
+     margin-right: 0;
      border-radius:10px;
-     background-image
+     background-image: url(img/win.jpg);
 }
