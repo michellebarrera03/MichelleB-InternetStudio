@@ -13,12 +13,12 @@ body {
      box-shadow: 10px 10px 10px rgba(0,0,0,.5);
      background-color: #f0f8ff;
 }
-h1 {
+h2 {
        font-family: "Titan One", sans-serif;
        font-weight: 400;
       font-optical-sizing: auto;
       font-style: normal; 	
-     color: #555555;
+     color: ##577DAB;
      font-size:3em;
      margin:0;
 	text-align: center;
@@ -56,17 +56,8 @@ img{
 }
 
 
-h2 {
-       font-family: "Titan One", sans-serif;
-       font-weight: 400;
-      font-optical-sizing: auto;
-      font-style: normal; 	
-     color: #577DAB;
-     font-size:1em;
-     margin:0;
-	text-align: center;
      
-h2 + p {
+p {
   font-family: "Candal", sans-serif;
   font-weight: 400;
   font-style: normal;
