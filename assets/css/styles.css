@@ -79,3 +79,10 @@ p {
   font-size: 15px;
 }
 
+body {
+     width:80%;
+     padding: 20px;
+     margin: 0 auto;
+     border-radius:10px;
+     background-image
+}
