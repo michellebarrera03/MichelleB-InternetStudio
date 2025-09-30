@@ -11,7 +11,7 @@ body {
      margin: 0 auto;
      border-radius:10px;
      box-shadow: 10px 10px 10px rgba(0,0,0,.5);
-     background-image: url(./assets/img/win.png);
+     background-image: url(assets/img/win.png);
 }
 h1 {
        font-family: "Titan One", sans-serif;
