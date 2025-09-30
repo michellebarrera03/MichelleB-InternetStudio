@@ -12,8 +12,8 @@ body {
      border-radius:10px;
      box-shadow: 10px 10px 10px rgba(0,0,0,.5);
      background-color: #f0f8ff;
-	background-image: radial-gradient(circle, rgba(87, 125, 171, 0.15) 35%, transparent 36%);
-background-size: 120px 120px;
+	background-image: radial-gradient(circle, rgba(87, 125, 171, 0.15) 50%, transparent 51%);
+background-size: 200px 200px;
 	
 }
 
