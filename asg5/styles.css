@@ -41,10 +41,11 @@ h1 {
 /* Paragraphs */
 p {
     font-family: "Fuzzy Bubbles", cursive;
-    color: #6F4E37; /* darker warm brown for readability */
+    color: #55372B; /* darker warm brown for readability */
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 15px;
+	font-weight: 600; 
 }
 
 ul.menu {
