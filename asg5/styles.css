@@ -111,3 +111,16 @@ form input, form textarea, form button {
     margin: 10px auto;      /* centers each input vertically with spacing */
 }
 
+.header-container {
+    display: flex;
+    align-items: center;      /* vertically align heading and image */
+    justify-content: center;  /* center the whole block horizontally */
+    gap: 15px;                /* space between heading and image */
+    margin-bottom: 40px;      /* space below header */
+}
+
+.header-img {
+    display: block;
+    width: 60px;   /* adjust size as needed */
+    height: auto;
+}
