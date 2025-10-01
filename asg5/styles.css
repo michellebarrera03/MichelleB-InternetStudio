@@ -1,12 +1,9 @@
 html {
 padding-top: 25px;
-background-color: #fffbd1;
-opacity: 0.8;
-background-image:  linear-gradient(#b79362 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #b79362 0.6000000000000001px, #fffbd1 0.6000000000000001px);
-background-size: 12px 12px;
+background-image: url()
 }
 
-body {
+body 
      width:80%;
      padding: 20px;
      margin: 0 auto;
