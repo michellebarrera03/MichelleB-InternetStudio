@@ -48,29 +48,26 @@ p {
 }
 
 ul.menu {
-    list-style-position: inside; /* keeps default bullets but moves them slightly */
-    text-align: center;           /* centers the text */
-    padding-left: 0;              /* remove default padding */
-    margin: 0 auto 40px auto;     /* center the block itself */
-    max-width: 600px;             /* optional: prevent stretching */
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0; /* remove default indentation */
 }
 
-/* Menu items */
-ul.menu li {
+li strong {
+    font-weight: normal;               /* keep non-bold */
+    font-family: "Sniglet", cursive;   /* match menu font */
+    color: #4B2E1E;   
+	text-align: center;/* darker warm brown */
+}
+
+/* Regular menu items */
+li {
     font-family: "Sniglet", cursive;
-    color: #A47149;
+    color: #A47149;                    /* medium brown for descriptions */
     font-size: 1rem;
     margin-bottom: 8px;
-    display: block;              /* ensure each li is on its own line */
+	text-align: center;
 }
-
-/* Section names inside li */
-ul.menu li strong {
-    font-weight: normal;
-    font-family: "Sniglet", cursive;
-    color: #4B2E1E;
-}
-
 h2 {
     text-align: center;
     font-family: "Coiny", system-ui; /* optional, or pick a font you like */
