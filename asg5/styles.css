@@ -58,5 +58,5 @@ li {
 li strong {
     font-weight: normal;               /* remove bold */
     font-family: "Sniglet", cursive;   /* same font as li */
-    color: #8B5E3C;                    /* warm brown, different from main text */
+    color: ##6B3E26;                    /* warm brown, different from main text */
 }
