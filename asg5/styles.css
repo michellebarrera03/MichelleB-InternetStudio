@@ -15,3 +15,16 @@ body
      background-image:  linear-gradient(#b79362 0.6000000000000001px, transparent 0.6000000000000001px), linear-gradient(to right, #b79362 0.6000000000000001px, #fffbd1 0.6000000000000001px);
      background-size: 12px 12px;
    }
+
+
+		.guest {
+			display: flex;
+			align-items: flex-start; /* text lines up with top of image */
+			gap: 15px; /* space between image and text */
+			margin-bottom: 30px;
+		}
+		.guest img {
+			width: 150px;
+			height: auto;
+			border-radius: 8px;
+		}
