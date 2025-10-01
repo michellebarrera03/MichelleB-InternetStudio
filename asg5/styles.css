@@ -68,8 +68,8 @@ li strong {
 li {
     font-family: "Sniglet", cursive;
     color: #A47149;                    /* medium brown for descriptions */
-    font-size: 1rem;
-    margin-bottom: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 8px
 	text-align: center;
 }
 h2 {
