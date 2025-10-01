@@ -48,26 +48,35 @@ p {
 }
 
 ul.menu {
-    list-style-position: inside;
-    text-align: center;
-    padding-left: 0; /* remove default indentation */
+    list-style: none;           /* remove default bullets */
+    text-align: center;         /* center the whole list */
+    padding-left: 0;            /* remove default padding */
+    margin: 0 auto 40px auto;   /* center block with spacing below */
 }
 
-li strong {
-    font-weight: normal;               /* keep non-bold */
-    font-family: "Sniglet", cursive;   /* match menu font */
-    color: #4B2E1E;   
-	text-align: center;/* darker warm brown */
+/* Add custom bullet with ::before */
+ul.menu li::before {
+    content: "• ";              /* bullet character */
+    color: #4B2E1E;             /* dark brown bullet color */
+    font-size: 1.2rem;           /* slightly bigger than text */
 }
 
-/* Regular menu items */
-li {
+/* Keep menu text styles */
+ul.menu li {
+    display: inline-block;      /* so bullet + text stays together */
     font-family: "Sniglet", cursive;
-    color: #A47149;                    /* medium brown for descriptions */
+    color: #A47149;
     font-size: 1rem;
     margin-bottom: 8px;
-	text-align: center;
 }
+
+/* Section names inside list */
+ul.menu li strong {
+    font-weight: normal;
+    font-family: "Sniglet", cursive;
+    color: #4B2E1E;   /* darker brown for section names */
+}
+
 h2 {
     text-align: center;
     font-family: "Coiny", system-ui; /* optional, or pick a font you like */
