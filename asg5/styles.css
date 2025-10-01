@@ -111,21 +111,3 @@ form input, form textarea, form button {
     margin: 10px auto;      /* centers each input vertically with spacing */
 }
 
-.header-container {
-    display: flex;
-    align-items: center;     /* vertically aligns text and chicken leg */
-    justify-content: center; /* centers the whole block horizontally */
-    gap: 15px;               /* space between heading and chicken leg */
-}
-
-h1.dinner-title {
-    font-family: "Coiny", system-ui;
-    font-weight: 400;
-    color: #8B5E3C;
-    font-size: 3rem;
-    margin: 0;
-}
-
-.chicken-leg {
-    flex-shrink: 0;          /* prevents SVG from shrinking */
-}
