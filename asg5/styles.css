@@ -47,30 +47,21 @@ p {
     margin-bottom: 15px;
 }
 
-/* Style the unordered list with class "menu" */
-ul.menu {
-    list-style-position: inside;
-    text-align: center;
-    padding-left: 0;
-    margin: 0 auto 40px auto;
-    max-width: 600px;
+li strong {
+    font-weight: normal;               /* keep non-bold */
+    font-family: "Sniglet", cursive;   /* match menu font */
+    color: #4B2E1E;   
+	text-align: center;/* darker warm brown */
 }
 
-/* Style the list items inside ul.menu */
-ul.menu li {
+/* Regular menu items */
+li {
     font-family: "Sniglet", cursive;
-    color: #A47149;           /* medium brown for menu text */
+    color: #A47149;                    /* medium brown for descriptions */
     font-size: 1rem;
     margin-bottom: 8px;
+	text-align: center;
 }
-
-/* Style the section names inside the list items */
-ul.menu li strong {
-    font-weight: normal;
-    font-family: "Sniglet", cursive;
-    color: #4B2E1E;           /* darker brown for section names */
-}
-
 h2 {
     text-align: center;
     font-family: "Coiny", system-ui; /* optional, or pick a font you like */
