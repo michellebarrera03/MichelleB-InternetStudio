@@ -54,3 +54,9 @@ li {
     font-size: 1rem;
     margin-bottom: 8px;
 }
+
+li strong {
+    font-weight: normal;               /* remove bold */
+    font-family: "Sniglet", cursive;   /* same font as li */
+    color: #8B5E3C;                    /* warm brown, different from main text */
+}
