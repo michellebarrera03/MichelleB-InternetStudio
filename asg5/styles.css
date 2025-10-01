@@ -94,3 +94,8 @@ h2.guest-name {
     font-size: 1rem;
     color: #4B2E1E;   /* darker brown for readability */
 }
+
+form input, form textarea, form button {
+    display: block;
+    margin: 10px auto;      /* centers each input vertically with spacing */
+}
