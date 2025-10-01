@@ -46,9 +46,13 @@ p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
-ul{
- text-align: center;
+
+ul.menu {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0; /* remove default indentation */
 }
+
 li strong {
     font-weight: normal;               /* keep non-bold */
     font-family: "Sniglet", cursive;   /* match menu font */
