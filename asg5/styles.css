@@ -47,16 +47,26 @@ p {
     margin-bottom: 15px;
 }
 
-li strong {
-    font-weight: normal;               /* keep non-bold */
-    font-family: "Sniglet", cursive;   /* match menu font */
-    color: #4B2E1E;                    /* darker warm brown */
+/* Style the unordered list with class "menu" */
+ul.menu {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto 40px auto;
+    max-width: 600px;
 }
 
-/* Regular menu items */
-li {
+/* Style the list items inside ul.menu */
+ul.menu li {
     font-family: "Sniglet", cursive;
-    color: #A47149;                    /* medium brown for descriptions */
+    color: #A47149;           /* medium brown for menu text */
     font-size: 1rem;
     margin-bottom: 8px;
+}
+
+/* Style the section names inside the list items */
+ul.menu li strong {
+    font-weight: normal;
+    font-family: "Sniglet", cursive;
+    color: #4B2E1E;           /* darker brown for section names */
 }
