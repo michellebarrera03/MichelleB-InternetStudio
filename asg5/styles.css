@@ -95,6 +95,12 @@ h2.guest-name {
     color: #4B2E1E;   /* darker brown for readability */
 }
 
+form {
+    text-align: center;       /* centers inline elements inside */
+    margin: 0 auto;           /* centers block-level form */
+    max-width: 500px;         /* optional: limits width */
+}
+
 form input, form textarea, form button {
     display: block;
     margin: 10px auto;      /* centers each input vertically with spacing */
