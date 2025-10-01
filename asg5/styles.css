@@ -48,33 +48,27 @@ p {
 }
 
 ul.menu {
-    list-style: none;           /* remove default bullets */
-    text-align: center;         /* center the whole list */
-    padding-left: 0;            /* remove default padding */
-    margin: 0 auto 40px auto;   /* center block with spacing below */
+    list-style-position: inside; /* keeps default bullets but moves them slightly */
+    text-align: center;           /* centers the text */
+    padding-left: 0;              /* remove default padding */
+    margin: 0 auto 40px auto;     /* center the block itself */
+    max-width: 600px;             /* optional: prevent stretching */
 }
 
-/* Add custom bullet with ::before */
-ul.menu li::before {
-    content: "• ";              /* bullet character */
-    color: #4B2E1E;             /* dark brown bullet color */
-    font-size: 1.2rem;           /* slightly bigger than text */
-}
-
-/* Keep menu text styles */
+/* Menu items */
 ul.menu li {
-    display: inline-block;      /* so bullet + text stays together */
     font-family: "Sniglet", cursive;
     color: #A47149;
     font-size: 1rem;
     margin-bottom: 8px;
+    display: block;              /* ensure each li is on its own line */
 }
 
-/* Section names inside list */
+/* Section names inside li */
 ul.menu li strong {
     font-weight: normal;
     font-family: "Sniglet", cursive;
-    color: #4B2E1E;   /* darker brown for section names */
+    color: #4B2E1E;
 }
 
 h2 {
