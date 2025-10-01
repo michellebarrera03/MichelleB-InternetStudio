@@ -70,3 +70,12 @@ ul.menu li strong {
     font-family: "Sniglet", cursive;
     color: #4B2E1E;           /* darker brown for section names */
 }
+
+h2 {
+    text-align: center;
+    font-family: "Coiny", system-ui; /* optional, or pick a font you like */
+    color: #8B5E3C;                  /* warm brown */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
