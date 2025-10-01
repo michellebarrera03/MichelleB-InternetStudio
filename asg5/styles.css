@@ -52,26 +52,26 @@ ul.menu {
     list-style-position: inside;
     text-align: center;
     padding-left: 0; /* remove default indentation */
-	font-size: 1.2rem;  
-	margin: 0 auto 50px auto;
-	max-width: 700px; 
+    margin: 0 auto 50px auto;
+    max-width: 700px;
 }
 
+/* Section names inside menu items */
 ul.menu li strong {
-    font-weight: normal;               /* keep non-bold */
-    font-family: "Sniglet", cursive;   /* match menu font */
-    color: #4B2E1E;   
-	text-align: center;/* darker warm brown */
+    font-weight: normal;              /* keep non-bold */
+    font-family: "Sniglet", cursive;  /* match menu font */
+    color: #4B2E1E;                   /* darker warm brown */
 }
 
 /* Regular menu items */
 ul.menu li {
     font-family: "Sniglet", cursive;
-    color: #A47149;                    /* medium brown for descriptions */
-    font-size: 1.2rem;
-    margin-bottom: 8px
-	text-align: center;
+    color: #A47149;                   /* medium brown for descriptions */
+    font-size: 1.2rem;                /* bigger text */
+    margin-bottom: 8px;               /* fixed missing semicolon */
+    text-align: center;
 }
+
 h2 {
     text-align: center;
     font-family: "Coiny", system-ui; /* optional, or pick a font you like */
