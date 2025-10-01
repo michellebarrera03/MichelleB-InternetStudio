@@ -28,3 +28,12 @@ body
 			height: auto;
 			border-radius: 8px;
 		}
+h1 {
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff6b6b;  /* optional: make the title colorful */
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
