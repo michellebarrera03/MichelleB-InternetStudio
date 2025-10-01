@@ -126,4 +126,8 @@ form input, form textarea, form button {
 	align-items: rigth;
 	
 }
-.footer {
+.foot-er {
+  font-family: "Sniglet", cursive;
+  font-size: 1rem;
+   color: #4B2E1E; 
+}
