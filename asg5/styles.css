@@ -47,16 +47,16 @@ p {
     margin-bottom: 15px;
 }
 
-/* List items */
-li {
-    font-family: "Sniglet", cursive;
-    color: #A47149; /* medium warm brown */
-    font-size: 1rem;
-    margin-bottom: 8px;
+li strong {
+    font-weight: normal;               /* keep non-bold */
+    font-family: "Sniglet", cursive;   /* match menu font */
+    color: #4B2E1E;                    /* darker warm brown */
 }
 
-li strong {
-    font-weight: normal;               /* remove bold */
-    font-family: "Sniglet", cursive;   /* same font as li */
-    color: ##6B3E26;                    /* warm brown, different from main text */
+/* Regular menu items */
+li {
+    font-family: "Sniglet", cursive;
+    color: #A47149;                    /* medium brown for descriptions */
+    font-size: 1rem;
+    margin-bottom: 8px;
 }
