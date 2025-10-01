@@ -32,8 +32,25 @@ h1 {
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: #ff6b6b;  /* optional: make the title colorful */
+    color: #8B5E3C; /* warm brown */
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
+}
+
+/* Paragraphs */
+p {
+    font-family: "Fuzzy Bubbles", cursive;
+    color: #6F4E37; /* darker warm brown for readability */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List items */
+li {
+    font-family: "Sniglet", cursive;
+    color: #A47149; /* medium warm brown */
+    font-size: 1rem;
+    margin-bottom: 8px;
 }
