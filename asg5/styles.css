@@ -84,6 +84,6 @@ h2 {
 h2.guest-name {
     font-size: 1.5rem;      /* smaller than regular h2 */
     color: #8B5E3C;         /* warm brown, optional */
-    text-align: center;        /* optional, if you want them left-aligned */
+    text-align: left;        /* optional, if you want them left-aligned */
     margin-bottom: 10px;     /* spacing below guest names */
 }
