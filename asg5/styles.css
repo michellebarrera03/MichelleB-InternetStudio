@@ -46,7 +46,9 @@ p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
+ul{
+ text-align: center;
+}
 li strong {
     font-weight: normal;               /* keep non-bold */
     font-family: "Sniglet", cursive;   /* match menu font */
