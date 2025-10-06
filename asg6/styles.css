@@ -80,3 +80,35 @@ body {
   background: linear-gradient(135deg, #e7f3ff, #cde6ff);
   border: 3px solid #a7d4ff;
 }
+.reflection-section {
+  background: linear-gradient(135deg, #ffeaf5, #e9faff, #e8ffef);
+  border: 3px solid #ffd8ef;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 40px auto 60px;
+  max-width: 800px;
+  box-shadow: 0 6px 15px rgba(220, 220, 220, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reflection-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(210, 210, 210, 0.6);
+}
+
+.reflection-section h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.reflection-section p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
