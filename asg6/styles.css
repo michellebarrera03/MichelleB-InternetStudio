@@ -17,3 +17,51 @@ body {
   padding: 30px;
   font-family: 'Saira Semi Condensed', sans-serif;
 }
+.hat-section {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(200, 200, 200, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hat-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(180, 180, 180, 0.5);
+}
+
+/* Pastel tones for each hat */
+.white-hat {
+  background: linear-gradient(135deg, #fffefa, #e8f7ff);
+  border: 3px solid #b6e3ff;
+}
+
+.red-hat {
+  background: linear-gradient(135deg, #ffe8ec, #ffd6e3);
+  border: 3px solid #ffb6c9;
+}
+
+.black-hat {
+  background: linear-gradient(135deg, #f1eff6, #e0ddf0);
+  border: 3px solid #c8c5dc;
+}
+
+/* Text styling */
+.hat-section h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hat-section p {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
