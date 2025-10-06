@@ -207,3 +207,17 @@ h1:hover {
   transform: scale(1.03);
   box-shadow: 0 0 30px 8px #fff27a;
 }
+.bannerr {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: repeating-linear-gradient(
+    90deg,
+    #ffe8ec,
+    #ffe8ec 50px,
+    #e8f7ff 50px,
+    #e8f7ff 100px
+  );
+  color: #555;
+  font-weight: bold;
+}
