@@ -65,3 +65,18 @@ body {
   color: #444;
   line-height: 1.6;
 }
+
+.yellow-hat {
+  background: linear-gradient(135deg, #fff9e6, #fff4c2);
+  border: 3px solid #ffe89c;
+}
+
+.green-hat {
+  background: linear-gradient(135deg, #e9fff0, #caffde);
+  border: 3px solid #a8f5c1;
+}
+
+.blue-hat {
+  background: linear-gradient(135deg, #e7f3ff, #cde6ff);
+  border: 3px solid #a7d4ff;
+}
