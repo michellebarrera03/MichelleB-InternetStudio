@@ -224,9 +224,9 @@ h1:hover {
 }
 .reflection-hat {
   position: absolute;
-  top: -25px;     
-  right: -25px;   
-  width: 140px;
+  top: -35px;     
+  right: -35px;   
+  width: 180px;
   height: auto;
   transform: rotate(-15deg); 
   transition: transform 0.3s ease;
