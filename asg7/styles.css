@@ -115,3 +115,6 @@ aside {
             top: 2rem;
 
 }
+aside {
+position: static;
+}
