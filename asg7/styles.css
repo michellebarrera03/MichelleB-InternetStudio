@@ -1,61 +1,115 @@
+/* abril-fatface-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/abril-fatface-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
-{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* alan-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Alan Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/alan-sans-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+p {
+  font-family: 'Alan Sans';
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+/* end reset browser styles */
+
+html{
+
+background-color: rgb(224, 255, 250);
+
+}
+body{
+
+background-color: rgb(242, 255, 253);
+border: 3px solid rgb(119, 163, 156);
+box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+max-width: 760px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+}
+h1 {
+
+font-size: 2.75em;
+font-family: 'Abril Fatface';
+font-weight: normal;
+text-align: center;
+letter-spacing: 3px;
+color: rgb(0, 87, 73);
+text-transform: uppercase;
+background-color: rgb(243, 255, 253);
+padding: 5px 15px 2px 15px;
+margin: 0 -15px 20px -15px;
+}
+
+img{
+float: left;
+}
+h2 {
+  font-family: 'Abril Fatface';
+}
+aside {
+width:30%;
+float: right;
+margin: 10px;
+background-color: rgb(250,235,199);
+padding: 10px 20px;
+border: 1px dotted rgb(252,101,18);
+border-top: 20px solid rgb(252,101,18);
+border-radius: 10px;
+box-shadow: 5px 5px 10px rgba( 0,0,0,5);
+}
+
+aside h3 {
+
+border: none;
+margin-top: 0;
+padding: 0;
+}
+
+
         
-        body {
-            font-family: 'Patrick Hand', cursive;
-            line-height: 1.6;
-            color: #2c3e20;
-            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-            min-height: 100vh;
-        }
-        
-        header {
-            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-            font-size: 4.5rem;
-            color: black;
-            text-align: center;
-            padding: 3rem 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 50px 40px;
-            border-bottom: 5px double #C8A55F;
-            position: relative;
-        }
-        
-        h1 {
-            font-family: 'DM Serif Text', serif;
-            font-size: 6em;
-            font-weight: heavy;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .tagline {
-            font-size: 2rem;
-            font-style: italic;
-            opacity: 1;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 2rem;
-        }
-        
-        main {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        
-        aside {
+      
+aside {
             background: white;
             padding: 2rem;
             border-radius: 12px;
@@ -65,81 +119,7 @@
             top: 2rem;
         }
         
-        h2 {
-            font-family: 'Ledger', serif;
-            color: #2d5a3d;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 3px solid #4a7c59;
-            padding-bottom: 0.5rem;
-        }
         
-        h3 {
-            font-family: 'Ledger', serif;
-            color: #2d5a3d;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .bio-section {
-            margin-bottom: 3rem;
-        }
-        
-        .candidate-image {
-            max-width: 400px;
-            height: 400px;
-            background: linear-gradient(135deg, #8b7355 0%, #d4a574 50%, #8b7355 100%);
-            border-radius: 8px;
-            margin: 1.5rem auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .running-mate-image {
-            height: 250px;
-            background: linear-gradient(135deg, #6b8e23 0%, #9acd32 50%, #6b8e23 100%);
-            border-radius: 8px;
-            margin: 1rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            font-size: 1.5em;
-        }
-        
-        .wiki-link {
-            display: inline-block;
-            background: #4a7c59;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin: 1rem 0;
-        }
-        
-        .wiki-link:hover {
-            background: #2d5a3d;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
-        .platform-section {
-            background: #f0f8f0;
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid #4a7c59;
-        }
         
         aside h3 {
             text-align: center;
@@ -160,19 +140,4 @@
                 position: static;
             }
             
-            h1 {
-                font-size: 2rem;
-            }
- li  { 
-      font-size: 1.5em;
-       color: black;
-       list-style-type: disc;
-       line-height: 1.6;
-       font-weight: normal;
-}
-
-ul {
-      font-size: 2em;
-      color: black;
-      font-weight: bold;      
-}
+            
