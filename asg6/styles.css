@@ -1,17 +1,16 @@
 
 html {
   background-color: #f1ffdf; 
-  background-image: url('images/cute.png');
+  background-image: url('images/bub.png');
   background-repeat: repeat;
   background-size: cover; 
   background-attachment: fixed;
 }
 
 body {
- background: url('images/cute.png')
-  background-size: cover;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
+ background-color: rgba(255, 255, 255, 0.5); /* semi-transparent layer over pattern */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   margin: 0;
   padding: 0;
   display: flex;
