@@ -88,6 +88,16 @@ margin-right: 5px;
 }
 h2 {
   font-family: 'Abril Fatface';
+  font-size: 1.5em;
+  color: rgb(249,107,24);
+  border-top: 2px dotted rgb(141,165,22);
+  border-bottom: 2px dotted rgb(141,165,22);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 15px 0 5px 0;
+  overflow: hidden;
+}
+  
 }
 aside {
 width:30%;
