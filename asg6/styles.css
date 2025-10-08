@@ -8,7 +8,7 @@ html {
 }
 
 body {
- background-color: rgba(255, 255, 255, 0.5); /* semi-transparent layer over pattern */
+ background-color: rgba(255, 250, 200, 0.5); /* semi-transparent layer over pattern */
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   margin: 0;
