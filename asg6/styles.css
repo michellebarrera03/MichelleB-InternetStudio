@@ -9,7 +9,7 @@ html {
 
 body {
  background: url('images/yell.png') no-repeat center center fixed;
-  background-size: cover;
+  background-size: 150px 150px;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
   margin: 0;
