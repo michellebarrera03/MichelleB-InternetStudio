@@ -84,6 +84,7 @@ margin: 0 -15px 20px -15px;
 img{
 float: left;
 border-radius: 10px;
+margin-right: auto;
 }
 h2 {
   font-family: 'Abril Fatface';
