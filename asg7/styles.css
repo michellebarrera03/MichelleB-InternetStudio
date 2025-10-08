@@ -40,4 +40,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1.2;
 }
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+/* end reset browser styles */
 
+html{
+
+background-color: rgb(224, 255, 250);
+
+}
+body{
+
+background-color: rgb(242, 255, 253);
+border: 3px solid rgb(119, 163, 156);
+box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+max-width: 760px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+}
