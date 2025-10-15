@@ -92,3 +92,9 @@ padding: 15px;
   border: 2px solid #fff; /* optional border for contrast */
   border-radius: 5px;
 }
+p {
+  font-family: 'Quattrocento', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
