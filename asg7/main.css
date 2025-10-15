@@ -100,7 +100,7 @@ p {
 }
 .content-block h4 {
   font-family: 'Oswald', sans-serif;
-  font-size: 22px;           /* bigger than p */
+  font-size: 20px;           /* bigger than p */
   font-weight: 700;          /* bold */
   text-align: center;        /* center the text */
   margin-top: 20px;
