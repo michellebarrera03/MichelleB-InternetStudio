@@ -7,9 +7,10 @@
   border-radius: 10px;          /* rounded corners */
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
   overflow-y: auto;             /* scroll if content is long */
-  height: 80vh;                 /* height relative to window */
+  height: auto ;                 /* height relative to window */
   float: left;                  /* place it to the left of content */
-  margin-right: 20px;    
+  margin-right: 20px; 
+  margin-top: 40px;
 }
 
 /* make text inside sidebar look nice */
