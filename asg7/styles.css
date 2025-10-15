@@ -133,8 +133,9 @@ h3 {
         
 .boris-img {
   display: block;
-  margin-bottom: 0 auto 20px;
+  margin-bottom: 20px;
   border-radius: 8px; 
-
+  margin-left: auto;
+  margin-right: auto;
 }
             
