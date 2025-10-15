@@ -44,6 +44,10 @@ html {
   background-attachment: fixed;  
   background-position: center;
 }
+.main-content {
+  margin-left: 360px; /* 300px sidebar + 60px spacing */
+  padding: 20px;
+}
 
 background-color: 
 {
