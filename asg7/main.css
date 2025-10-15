@@ -98,3 +98,12 @@ p {
   margin-top: 20px;
   font-weigth: normal;
 }
+.content-block h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;           /* bigger than p */
+  font-weight: 700;          /* bold */
+  text-align: center;        /* center the text */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
