@@ -70,8 +70,13 @@ padding: 15px;
   text-transform: uppercase; 
   background-color: #b3d9ff;
   padding: 10px 20px; /* space around text */
-  border-radius: 8px; /* rounded edges for the block */
-  display: inline-block; /* block fits just around the text */
+  border-radius: 8px; 
+  display: inline-block; 
+   position: fixed;       
+  top: 20px;            
+  left: 50%;             
+  transform: translateX(-50%); 
+  z-index: 1000;  
 }
 
 .content-block {
