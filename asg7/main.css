@@ -10,7 +10,7 @@
   height: auto ;                 /* height relative to window */
   float: left;                  /* place it to the left of content */
   margin-right: 20px; 
-  margin-top: 40px;
+  margin: 15px auto;
 }
 
 /* make text inside sidebar look nice */
