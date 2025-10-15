@@ -5,12 +5,11 @@
   background-color: #b3d9ff;    /* light gray background */
   padding: 20px;                /* space inside box */
   border-radius: 10px;          /* rounded corners */
-  position: fixed;              /* sticks to side as a sidebar */
-  top: 80px;                    /* distance from top of page */
-  left: 40px;                   /* distance from left edge */
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
   overflow-y: auto;             /* scroll if content is long */
   height: 80vh;                 /* height relative to window */
+  float: left;                  /* place it to the left of content */
+  margin-right: 20px;    
 }
 
 /* make text inside sidebar look nice */
