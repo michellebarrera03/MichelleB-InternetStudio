@@ -17,9 +17,7 @@ time, mark, audio, video {
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
   overflow-y: auto;             /* scroll if content is long */
   height: auto ;                 /* height relative to window */
-  float: left;                  /* place it to the left of content */
   margin-right: 20px;
-  margin-left: 20px;
   margin-top: 150px;
 }
 
@@ -55,8 +53,10 @@ html {
 }
 
 .main-content {
-  margin-left: 360px; /* 300px sidebar + 60px spacing */
+  flex: 1;                /* takes remaining space next to sidebar */
   padding: 20px;
+  min-width: 300px;       /* ensures it doesn’t get too tiny on phones */
+  max-width: 800px;   
 }
 
 
@@ -82,9 +82,8 @@ html {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-top: 20px;
   margin: 20px auto; /* centers the block horizontally */
-  max-width: 900px;   
-  width: 90%;        
-  box-sizing: border-box;
+  max-width: 700px;   
+  width: 100%;        
 }
 
 /* Style the wireframe images */
@@ -111,4 +110,12 @@ p {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #1a1a1a;
+}
+body {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;              /* space between sidebar and main content */
+  padding: 100px 40px;    /* top & side spacing */
+  box-sizing: border-box; /* makes padding count inside total width */
+  flex-wrap: wrap;        /* lets it wrap nicely on smaller screens */
 }
