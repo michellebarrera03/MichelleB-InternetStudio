@@ -2,7 +2,7 @@
 
 .sidebar {
   width: 300px;                 /* width of sidebar */
-  background-color: #f5f5f5;    /* light gray background */
+  background-color: #b3d9ff;    /* light gray background */
   padding: 20px;                /* space inside box */
   border-radius: 10px;          /* rounded corners */
   position: fixed;              /* sticks to side as a sidebar */
