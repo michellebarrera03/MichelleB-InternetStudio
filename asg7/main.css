@@ -74,3 +74,21 @@ padding: 15px;
   border-radius: 8px; /* rounded edges for the block */
   display: inline-block; /* block fits just around the text */
 }
+
+.content-block {
+  background-color: #b3d9ff; /* baby blue block */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* Style the wireframe images */
+.content-block img {
+  width: 100%; /* makes images responsive */
+  max-width: 400px; /* optional max size */
+  display: block;
+  margin: 15px auto; /* centers each image */
+  border: 2px solid #fff; /* optional border for contrast */
+  border-radius: 5px;
+}
