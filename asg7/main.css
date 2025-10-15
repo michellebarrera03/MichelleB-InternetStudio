@@ -63,6 +63,7 @@ html {
   padding: 10px 20px; /* space around text */
   border-radius: 8px; 
   display: inline-block; 
+  margin-left: 300px;
 }
 
 .content-block {
