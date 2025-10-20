@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
   line-height: 1.6;
-  background-color: #1e1e1e; /* dark outside background */
+  background-color: #3b2b58; /* dark outside background */
   color: #3e2c41;
   font-family: 'Poppins', sans-serif;
 }
