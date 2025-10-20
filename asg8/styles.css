@@ -117,6 +117,6 @@ a.button:hover {
   width: 250px;          /* adjust size as needed */
   border-radius: 12px;   /* soft corners */
   float: right;           /* pushes it to the left side */
-  margin: 15px 20px 15px 0; /* adds space around image */
+  margin: 15px 0 15px 20px; /* adds space around image */
   box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
 }
