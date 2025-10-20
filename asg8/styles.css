@@ -120,3 +120,8 @@ a.button:hover {
   margin: 15px 0 15px 20px; /* adds space around image */
   box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
 }
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
