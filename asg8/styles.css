@@ -116,7 +116,7 @@ a.button:hover {
 .cat-img {
   width: 250px;          /* adjust size as needed */
   border-radius: 12px;   /* soft corners */
-  float: left;           /* pushes it to the left side */
+  float: right;           /* pushes it to the left side */
   margin: 15px 20px 15px 0; /* adds space around image */
   transform: rotate(-3deg); /* gives it that subtle “skewed” look */
   box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
