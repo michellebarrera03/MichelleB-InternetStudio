@@ -1,1 +1,11 @@
-Use these starting files for your assignments. Use this index page as the home page for any assignment folder.
+# Website Template
+
+Fork and use this template repo (a.k.a. "boilerplate") for any web project
+
+
+
+Option 1: Use Template
+Click Use this template > Create a new repository
+
+Option 2: Open in new Codespace
+https://codespaces.new/kenstarzer/website-template 
