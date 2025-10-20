@@ -19,22 +19,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
   line-height: 1.6;
-  background-color: #f6f3fa; /* soft lavender page bg */
+  background-color: #1e1e1e; /* dark outside background */
   color: #3e2c41;
   font-family: 'Poppins', sans-serif;
 }
 
 /* MAIN CONTAINER */
-body {
+.container {
   max-width: 780px;
-  width: 90%; /* makes it flexible on smaller screens */
-  margin: 40px auto; /* centers it perfectly */
-  background-color: #faf7ff;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #faf7ff; /* light box color */
   border: 3px solid #c5a3ff;
   box-shadow: 0 0 20px 8px rgba(140, 90, 255, 0.15);
   padding: 25px;
   border-radius: 15px;
-  box-sizing: border-box; /* keeps padding inside width */
+  box-sizing: border-box;
 }
 
 /* HEADINGS */
