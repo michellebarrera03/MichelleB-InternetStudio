@@ -21,6 +21,9 @@ body {
   line-height: 1.5;
   background-color: #f6f3fa; /* soft lavender */
   color: #3e2c41;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* PAGE CONTAINER */
