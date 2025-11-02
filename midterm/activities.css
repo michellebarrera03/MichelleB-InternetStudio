@@ -1,4 +1,32 @@
 /* --- Reset --- */
+nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px dashed #f3c1e5; /* you can change this color per theme (mint, blue, etc.) */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff8ac0; /* match your theme highlight color */
+    transform: scale(1.05);
+}
 * {
     margin: 0;
     padding: 0;
