@@ -1,5 +1,33 @@
 
 /* --- Reset --- */
+/* --- Navigation Bar --- */
+nav {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #80ed99; /* soft mint hover color */
+    transform: scale(1.05);
+}
+
 * {
     margin: 0;
     padding: 0;
