@@ -1,4 +1,32 @@
 /* --- Reset --- */
+/* --- Navigation Bar --- */
+nav {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 3px dashed #bde0fe; /* pastel blue accent */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #74c0fc; /* bright pastel blue on hover */
+    transform: scale(1.05);
+}
+
 * {
     margin: 0;
     padding: 0;
