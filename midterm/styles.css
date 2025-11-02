@@ -70,9 +70,17 @@ nav a:hover {
 }
 
 .hero h1 {
-	font-size: 2.5em;
-	color: #7a6fa7;
-	margin-bottom: 10px;
+	font-family: "Baloo 2", cursive;
+	font-size: 3rem;
+	color: #6ab9ba;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+.hero p {
+	font-family: "Fredoka", sans-serif;
+	color: #44686a;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 
 .btn {
