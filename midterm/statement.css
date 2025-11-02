@@ -1,1 +1,124 @@
 
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Body --- */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f6fff9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Container --- */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 2.5rem;
+    color: #7ed6c1;
+    border-bottom: 3px dashed #b2f2bb;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* --- Main Content --- */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.main-text {
+    flex: 2;
+}
+
+.main-text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* --- Aside Column --- */
+.design-notes {
+    flex: 1;
+    background-color: #e7fff3;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.design-notes h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.4rem;
+    color: #6fc1a4;
+    margin-bottom: 0.5rem;
+}
+
+.design-notes ul {
+    list-style-type: disc;
+    margin-left: 1.2rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* --- Citations --- */
+.citations {
+    margin-top: 2rem;
+}
+
+.citations h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.5rem;
+    color: #6fc1a4;
+    margin-bottom: 0.5rem;
+}
+
+.citations ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #444;
+}
+
+.citations a {
+    color: #4fbca7;
+    text-decoration: none;
+}
+
+.citations a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #b2f2bb;
+    font-size: 0.8rem;
+    color: #666;
+}
