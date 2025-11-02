@@ -1,1 +1,103 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* --- Body Container --- */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f4faff; /* soft pastel blue background */
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #a3d8f4;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #5eb8ff; /* bright sky blue */
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Section Titles --- */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #56b3d0;
+    border-bottom: 2px dashed #b3e5fc;
+    padding-bottom: 0.5rem;
+}
+
+/* --- Restaurant List --- */
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.restaurant {
+    background-color: #e3f2fd; /* light blue card */
+    border-radius: 15px;
+    padding: 1rem;
+    width: 270px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 0 0 auto;
+    transition: transform 0.2s ease;
+}
+
+.restaurant:hover {
+    transform: scale(1.05);
+}
+
+.restaurant img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 0.8rem;
+    border-radius: 12px;
+}
+
+.restaurant h3 {
+    font-size: 1.2rem;
+    color: #1e88e5;
+    margin-bottom: 0.3rem;
+}
+
+.restaurant p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    background-color: #bbdefb;
+    border-top: 2px solid #90caf9;
+    font-size: 0.8rem;
+    color: #333;
+}
