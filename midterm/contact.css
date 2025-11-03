@@ -36,41 +36,48 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-
 /* --- CONTACT SECTION --- */
 .contact-container {
     display: flex;
-    align-items: stretch; /* combines both */
+    align-items: stretch; /* ensures children have equal height */
     justify-content: center;
     gap: 60px;
     padding: 80px;
+    flex-wrap: wrap; /* allows better responsiveness */
 }
 
 .contact-image {
     display: flex;
-    align-items: stretch;
     justify-content: center;
+    flex: 1; /* allow image to grow/shrink with container */
 }
 
 .contact-image img {
-    width: 400px; /* match form box width */
-    height: 100%; /* fill the same height as the form */
+    width: 100%;
+    max-width: 400px; /* same as form width */
+    height: auto;
     border-radius: 25px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     object-fit: cover;
 }
 
+/* --- Form Box --- */
 .contact-form-box {
     background-color: #ffffffcc;
     padding: 35px 45px;
     border-radius: 30px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     width: 400px;
-    text-align: center;
+    flex: 1; /* match height of sibling image */
+}
+
+.contact-form-box h1,
+.contact-form-box p {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center; /* center heading & intro text */
 }
 
 .contact-form-box h1 {
-    font-family: 'Fredoka', sans-serif;
     color: #a68ac3;
     font-size: 34px;
     margin-bottom: 12px;
@@ -78,21 +85,15 @@ nav a:hover {
 
 .contact-form-box p {
     color: #6e5b8d;
-    margin-bottom: 25px;
     font-size: 15px;
-}
-/* Center only the header and intro text */
-.contact-form-box h1,
-.contact-form-box p {
-  text-align: center;
-}
-
-/* Align form content to the left */
-.contact-form-box form {
-  text-align: left;
+    margin-bottom: 25px;
 }
 
 /* --- Form --- */
+.contact-form-box form {
+    text-align: left; /* keep fields aligned left */
+}
+
 label {
     display: block;
     margin: 10px 0 5px;
@@ -136,15 +137,13 @@ button:hover {
 @media (max-width: 800px) {
     .contact-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        padding: 40px 20px;
     }
 
-    .contact-form-box {
-        width: 90%;
-    }
-
+    .contact-form-box,
     .contact-image img {
-        width: 280px;
+        width: 90%;
+        max-width: 400px;
     }
 }
-
