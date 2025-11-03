@@ -179,7 +179,7 @@ section h2 {
 .footer-brand h4 {
   margin: 0 0 6px;
   color: #ff8ba7; /* header color theme */
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Baloo 2', sans-serif;
   font-size: 1.25rem;
 }
 
