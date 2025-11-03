@@ -73,6 +73,16 @@ nav a:hover {
     margin-bottom: 25px;
     font-size: 15px;
 }
+/* Center only the header and intro text */
+.contact-form-box h1,
+.contact-form-box p {
+  text-align: center;
+}
+
+/* Align form content to the left */
+.contact-form-box form {
+  text-align: left;
+}
 
 /* --- Form --- */
 label {
