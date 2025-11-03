@@ -40,13 +40,10 @@ nav a:hover {
 /* --- CONTACT SECTION --- */
 .contact-container {
     display: flex;
-    align-items: center;
+    align-items: stretch; /* combines both */
     justify-content: center;
     gap: 60px;
     padding: 80px;
-}
-.contact-container {
-    align-items: stretch;
 }
 
 .contact-image {
