@@ -1,4 +1,4 @@
-/*  Insert all your glorious CSS styles below! */
+
 /* General Reset */
 body {
 	margin: 0;
@@ -12,6 +12,7 @@ nav {
 	background-color: #ffe6f2;
 	padding: 15px 0;
 	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	animation: fadeInNav 1s ease-out; /* ✨ Added animation */
 }
 
 nav ul {
@@ -27,11 +28,24 @@ nav a {
 	text-decoration: none;
 	color: #7b6d8d;
 	font-weight: 600;
-	transition: color 0.3s ease;
+	transition: color 0.3s ease, transform 0.3s ease; /* ✨ Added smooth hover animation */
 }
 
 nav a:hover {
-	color: #ff9ecb;
+	color: #a68ac3; /* your theme purple */
+	transform: scale(1.1); /* ✨ Added hover scale effect */
+}
+
+/* === Nav Animation Keyframes === */
+@keyframes fadeInNav {
+	from {
+		opacity: 0;
+		transform: translateY(-15px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* Hero Section */
@@ -67,6 +81,7 @@ nav a:hover {
 	border-radius: 30px;
 	backdrop-filter: blur(8px);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+	animation: fadeInHero 1.2s ease-out; /* ✨ Added hero fade-in */
 }
 
 .hero h1 {
@@ -76,6 +91,7 @@ nav a:hover {
 	margin-bottom: 15px;
 	letter-spacing: 1px;
 }
+
 .hero p {
 	font-family: "Fredoka", sans-serif;
 	color: #44686a;
@@ -95,6 +111,18 @@ nav a:hover {
 
 .btn:hover {
 	background-color: #ffb6c1;
+}
+
+/* === Hero Animation Keyframes === */
+@keyframes fadeInHero {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* Intro Section */
