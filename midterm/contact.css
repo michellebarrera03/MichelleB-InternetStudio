@@ -48,13 +48,13 @@ nav a:hover {
 
 .contact-image {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 
 .contact-image img {
-    width: 400px; /* match width of form box */
-    height: auto;
+    width: 400px; /* match form box width */
+    height: 100%; /* fill the same height as the form */
     border-radius: 25px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     object-fit: cover;
