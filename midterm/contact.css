@@ -6,40 +6,36 @@ body {
     padding: 0;
 }
 
-/* --- NAVIGATION (Same as other pages) --- */
-header {
-    background-color: #a68ac3;
-    padding: 15px 0;
+/* --- NAVIGATION (Matches activities.css style) --- */
+nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px dashed #cbb8e6; /* soft pastel purple tone */
 }
 
-.navbar ul {
-    list-style-type: none;
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
+    gap: 2rem;
     margin: 0;
     padding: 0;
-    gap: 40px;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 17px;
+nav a {
     font-family: 'Fredoka', sans-serif;
-    transition: 0.3s;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.navbar ul li a:hover,
-.navbar ul li a.active {
-    text-decoration: underline;
-    color: #fef7ff;
+nav a:hover {
+    color: #a68ac3; /* your theme highlight color */
+    transform: scale(1.05);
 }
+
 
 /* --- CONTACT SECTION --- */
 .contact-container {
