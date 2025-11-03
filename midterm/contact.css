@@ -58,7 +58,7 @@ nav a:hover {
     border-radius: 30px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     width: 400px;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-form-box h1 {
