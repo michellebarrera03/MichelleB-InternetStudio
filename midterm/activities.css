@@ -156,13 +156,133 @@ section h2 {
     border-radius: 10px;
 }
 
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 1rem 1rem;
-    margin-top: 2rem;
-    background-color: #fce4ec;
-    border-top: 2px solid #ffc1cc;
-    font-size: 0.8rem;
-    color: #555;
+/* ---------------- Footer (site-wide) ---------------- */
+.site-footer {
+  background: linear-gradient(180deg, #fff6fb 0%, #f6eefc 100%);
+  border-top: 1px solid rgba(166,138,195,0.12);
+  color: #4b3a57;
+  padding: 28px 18px;
+  font-family: 'Fredoka', sans-serif;
 }
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-brand h4 {
+  margin: 0 0 6px;
+  color: #7a5f98;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.25rem;
+}
+
+.footer-brand .tag {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b556f;
+}
+
+/* Contact column */
+.footer-contact {
+  min-width: 220px;
+}
+
+.footer-contact h5 {
+  margin: 0 0 8px;
+  color: #6b4f8a;
+  font-size: 1rem;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  color: #8f6fb0; /* pastel purple icon color */
+  flex: 0 0 28px;
+}
+
+.contact-label {
+  display: inline-block;
+  width: 60px;
+  color: #6b556f;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* explicit link styling */
+.contact-link {
+  color: #4b2f71;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Info column */
+.footer-info {
+  min-width: 200px;
+}
+
+.footer-info h5 {
+  margin: 0 0 8px;
+  color: #6b4f8a;
+  font-size: 1rem;
+}
+
+.footer-info .small {
+  margin: 6px 0;
+  color: #6b556f;
+  font-size: 0.9rem;
+}
+
+/* bottom row */
+.footer-bottom {
+  max-width: 1100px;
+  margin: 12px auto 0;
+  text-align: center;
+  color: #6b556f;
+  font-size: 0.85rem;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(166,138,195,0.08);
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .footer-inner {
+    gap: 18px;
+    padding: 0 8px;
+  }
+
+  .footer-brand, .footer-contact, .footer-info {
+    min-width: 100%;
+  }
+
+  .contact-item {
+    gap: 8px;
+  }
+
+  .contact-label {
+    width: 80px;
+  }
+}
+
