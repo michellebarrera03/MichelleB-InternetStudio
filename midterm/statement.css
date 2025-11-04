@@ -271,3 +271,42 @@ header p {
     width: 80px;
   }
 }
+
+/* --- Fix Citation Layout --- */
+.citations {
+  max-width: 65%; /* aligns with main text area width */
+  margin-top: -0.5rem; /* brings it up slightly */
+  margin-left: 0; 
+  padding: 1rem 1.5rem;
+  background-color: #f9fffb; /* subtle background to blend with aside */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 1;
+}
+
+/* Make it blend under the aside visually */
+@media (min-width: 900px) {
+  .citations {
+    margin-left: 2rem;
+    margin-right: auto;
+    transform: translateY(-1rem); /* tucks slightly under the aside */
+  }
+}
+
+/* Citation title & links */
+.citations h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  color: #6fc1a4;
+  border-bottom: 2px dashed #b2f2bb;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.citations ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
