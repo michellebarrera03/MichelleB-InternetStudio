@@ -2,146 +2,175 @@
 /* --- Reset --- */
 /* --- Navigation Bar --- */
 nav {
-    background-color: #ffffff;
-    padding: 1rem 0;
-    border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
 }
 
 nav a {
-    font-family: 'Fredoka', sans-serif;
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    transition: all 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #80ed99; /* soft mint hover color */
-    transform: scale(1.05);
+  color: #80ed99;
+  transform: scale(1.05);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* --- Body --- */
 body {
-    font-family: 'Fredoka', sans-serif;
-    background-color: #f6fff9;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #f6fff9;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* --- Container --- */
 .container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* --- Header --- */
 header {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 header h1 {
-    font-family: 'Baloo 2', cursive;
-    font-size: 2.5rem;
-    color: #7ed6c1;
-    border-bottom: 3px dashed #b2f2bb;
-    display: inline-block;
-    padding-bottom: 0.3rem;
+  font-family: 'Baloo 2', cursive;
+  font-size: 2.5rem;
+  color: #7ed6c1;
+  border-bottom: 3px dashed #b2f2bb;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
 header p {
-    font-size: 1rem;
-    color: #666;
-    margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
 }
 
 /* --- Main Content --- */
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .main-text {
-    flex: 2;
+  flex: 2;
 }
 
 .main-text p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #444;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
 }
 
 /* --- Aside Column --- */
 .design-notes {
-    flex: 1;
-    background-color: #e7fff3;
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    height: fit-content;
+  flex: 1;
+  background-color: #e7fff3;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  height: fit-content;
 }
 
 .design-notes h2 {
-    font-family: 'Baloo 2', cursive;
-    font-size: 1.4rem;
-    color: #6fc1a4;
-    margin-bottom: 0.5rem;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.4rem;
+  color: #6fc1a4;
+  margin-bottom: 0.5rem;
 }
 
 .design-notes ul {
-    list-style-type: disc;
-    margin-left: 1.2rem;
-    color: #555;
-    font-size: 0.95rem;
+  list-style-type: disc;
+  margin-left: 1.2rem;
+  color: #555;
+  font-size: 0.95rem;
 }
 
 /* --- Citations --- */
 .citations {
-    margin-top: 2rem;
+  max-width: 65%;
+  margin-top: -0.5rem;
+  margin-left: 0; 
+  padding: 1rem 1.5rem;
+  background-color: #e6ffee;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 1;
 }
 
 .citations h2 {
-    font-family: 'Baloo 2', cursive;
-    font-size: 1.5rem;
-    color: #6fc1a4;
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  color: #6fc1a4;
+  border-bottom: 2px dashed #b2f2bb;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
-.citations ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    color: #444;
+.citations ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .citations a {
-    color: #4fbca7;
-    text-decoration: none;
+  color: #4fbca7;
+  text-decoration: none;
 }
 
 .citations a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* ---------------- Footer (site-wide) ---------------- */
+/* --- Desktop Layout Adjust --- */
+@media (min-width: 900px) {
+  .citations {
+    margin-left: 2rem;
+    margin-right: auto;
+    transform: translateY(-1rem);
+  }
+}
+
+/* --- Mobile Fix for Citations --- */
+@media (max-width: 900px) {
+  .citations {
+    max-width: 100%;
+    margin: 1.5rem 0 0 0;
+    transform: none;
+    padding: 1.2rem;
+  }
+}
+
+/* ---------------- Footer ---------------- */
 .site-footer {
   background: linear-gradient(180deg, #e7fff3 0%, #f6fff9 100%);
   border-top: 1px solid rgba(126,214,193,0.2);
@@ -163,7 +192,7 @@ header p {
 /* Brand column */
 .footer-brand h4 {
   margin: 0 0 6px;
-  color: #50c878; /* mint green accent */
+  color: #50c878;
   font-family: 'Baloo 2', sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
@@ -182,7 +211,7 @@ header p {
 
 .footer-contact h5 {
   margin: 0 0 8px;
-  color: #3fbf91; /* darker mint for headings */
+  color: #3fbf91;
   font-size: 1rem;
 }
 
@@ -202,7 +231,7 @@ header p {
 .icon {
   width: 24px;
   height: 24px;
-  color: #80ed99; /* soft mint icons */
+  color: #80ed99;
   flex: 0 0 24px;
 }
 
@@ -252,75 +281,10 @@ header p {
   border-top: 1px dashed rgba(126,214,193,0.2);
 }
 
-/* Responsive */
-@media (max-width: 780px) {
-  .footer-inner {
-    gap: 18px;
-    padding: 0 8px;
-  }
-
-  .footer-brand, .footer-contact, .footer-info {
-    min-width: 100%;
-  }
-
-  .contact-item {
-    gap: 8px;
-  }
-
-  .contact-label {
-    width: 80px;
-  }
-}
-
-/* --- Fix Citation Layout --- */
-.citations {
-  max-width: 65%; /* aligns with main text area width */
-  margin-top: -0.5rem; /* brings it up slightly */
-  margin-left: 0; 
-  padding: 1rem 1.5rem;
-  background-color: #e6ffee; /* subtle background to blend with aside */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
-  position: relative;
-  z-index: 1;
-}
-
-/* Make it blend under the aside visually */
-@media (min-width: 900px) {
-  .citations {
-    margin-left: 2rem;
-    margin-right: auto;
-    transform: translateY(-1rem); /* tucks slightly under the aside */
-  }
-    @media (max-width: 900px) {
-  .citations {
-    max-width: 100%;
-    margin-left: 0;
-    transform: none;
-  }
-}
-
-}
-
-/* Citation title & links */
-.citations h2 {
-  margin-bottom: 0.6rem;
-  font-size: 1.3rem;
-  color: #6fc1a4;
-  border-bottom: 2px dashed #b2f2bb;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-}
-
-.citations ul li {
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
 /* --- Mobile Footer & Container Fix --- */
 @media (max-width: 780px) {
   body {
-    overflow-x: hidden; /* stops horizontal scrolling */
+    overflow-x: hidden;
   }
 
   .container {
@@ -351,7 +315,7 @@ header p {
 
   .footer-contact a, 
   .contact-link {
-    word-break: break-word; /* stops links from stretching the box */
+    word-break: break-word;
   }
 }
 
