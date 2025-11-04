@@ -249,3 +249,36 @@ section h2 {
     width: 80px;
   }
 }
+/* --- Buttons for Restaurant Cards --- */
+.button-group {
+  display: flex;
+  flex-direction: column; /* stack buttons */
+  gap: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.btn {
+  background-color: #b9fbc0; /* pastel mint green */
+  color: #333;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #ffd6e0; /* soft pink hover */
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #ffcad4; /* slightly deeper pink when pressed */
+  transform: scale(0.98);
+}
