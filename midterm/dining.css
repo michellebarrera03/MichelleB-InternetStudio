@@ -249,36 +249,37 @@ section h2 {
     width: 80px;
   }
 }
-/* --- Buttons for Restaurant Cards --- */
+/* --- Buttons for Restaurant Cards (blue theme) --- */
 .button-group {
   display: flex;
-  flex-direction: column; /* stack buttons */
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
   margin-top: 1rem;
   align-items: center;
 }
 
 .btn {
-  background-color: #b9fbc0; /* pastel mint green */
-  color: #333;
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 600;
+  background-color: #a3d8f4; /* soft pastel blue */
+  color: #ffffff;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
   border: none;
-  border-radius: 20px;
-  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  padding: 0.6rem 1.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
   max-width: 180px;
-  text-align: center;
+  box-shadow: 0 3px 6px rgba(163, 216, 244, 0.5);
 }
 
 .btn:hover {
-  background-color: #ffd6e0; /* soft pink hover */
+  background-color: #74c0fc; /* brighter pastel blue on hover */
   transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(94, 184, 255, 0.5);
 }
 
 .btn:active {
-  background-color: #ffcad4; /* slightly deeper pink when pressed */
+  background-color: #5eb8ff; /* pressed state */
   transform: scale(0.98);
 }
