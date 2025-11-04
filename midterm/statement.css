@@ -317,4 +317,41 @@ header p {
   font-size: 0.9rem;
   line-height: 1.4;
 }
+/* --- Mobile Footer & Container Fix --- */
+@media (max-width: 780px) {
+  body {
+    overflow-x: hidden; /* stops horizontal scrolling */
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .site-footer {
+    padding: 20px 12px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .footer-contact ul, 
+  .footer-info {
+    width: 100%;
+  }
+
+  .footer-contact a, 
+  .contact-link {
+    word-break: break-word; /* stops links from stretching the box */
+  }
+}
 
