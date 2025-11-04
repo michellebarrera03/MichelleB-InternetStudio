@@ -116,15 +116,16 @@ header p {
 
 /* --- Citations --- */
 .citations {
-  max-width: 65%;
-  margin-top: 1rem; /* a little space from content */
-  margin-left: -1.5rem; /* aligns perfectly with your main text column */
-  padding: 1rem 1.5rem;
+  max-width: 70%;
+  margin-top: 2rem; /* space between aside and citations */
+  margin-left: 0; /* aligns with main-text start */
+  padding: 1.2rem 1.5rem;
   background-color: #e6ffee;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   position: relative;
   z-index: 1;
+  transform: translateX(-2rem); /* shifts left to match paragraph start */
 }
 
 .citations h2 {
@@ -134,6 +135,7 @@ header p {
   border-bottom: 2px dashed #b2f2bb;
   display: inline-block;
   padding-bottom: 0.3rem;
+  width: 60%; /* extends dashed line */
 }
 
 .citations ul li {
@@ -154,9 +156,8 @@ header p {
 /* --- Desktop Layout Adjust --- */
 @media (min-width: 900px) {
   .citations {
-    margin-left: 2rem;
+    transform: translateX(-2.2rem);
     margin-right: auto;
-    transform: translateY(-1rem);
   }
 }
 
@@ -167,6 +168,9 @@ header p {
     margin: 1.5rem 0 0 0;
     transform: none;
     padding: 1.2rem;
+  }
+  .citations h2 {
+    width: auto;
   }
 }
 
