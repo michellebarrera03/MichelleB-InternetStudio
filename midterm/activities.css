@@ -285,3 +285,49 @@ section h2 {
     width: 80px;
   }
 }
+/* --- Buttons (pastel theme, rounded) --- */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ffd6e0; /* light pastel pink */
+  color: #333;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.btn:hover {
+  background-color: #ffb3c6; /* slightly deeper pink on hover */
+  transform: scale(1.05);
+}
+
+.btn.alt {
+  background-color: #ffe6f2; /* lighter pink */
+}
+
+.btn.alt:hover {
+  background-color: #ffcce0;
+}
+
+.photo-buttons {
+  margin-top: 1rem;
+}
+
+.btn.map {
+  background-color: #fcd5ce; /* peachy pink */
+}
+
+.btn.map:hover {
+  background-color: #ffb3c6;
+}
