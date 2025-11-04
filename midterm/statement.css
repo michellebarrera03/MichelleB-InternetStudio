@@ -117,8 +117,8 @@ header p {
 /* --- Citations --- */
 .citations {
   max-width: 65%;
-  margin-top: -1.2rem; /* moves it upward */
-  margin-left: -2rem; /* nudges it to the left */
+  margin-top: 1rem; /* a little space from content */
+  margin-left: 0; /* aligns perfectly with your main text column */
   padding: 1rem 1.5rem;
   background-color: #e6ffee;
   border-radius: 15px;
