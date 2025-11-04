@@ -1,5 +1,11 @@
 
 /* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
@@ -28,18 +34,13 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* --- Body --- */
 body {
   font-family: 'Fredoka', sans-serif;
   background-color: #f6fff9;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* --- Container --- */
@@ -50,12 +51,34 @@ body {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Lightbulb Decoration --- */
+.bulb {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.bulb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
 }
 
 /* --- Header --- */
 header {
   text-align: center;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
@@ -82,6 +105,8 @@ header p {
 
 .main-text {
   flex: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .main-text p {
@@ -98,6 +123,8 @@ header p {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   height: fit-content;
+  position: relative;
+  z-index: 1;
 }
 
 .design-notes h2 {
@@ -117,15 +144,15 @@ header p {
 /* --- Citations --- */
 .citations {
   max-width: 70%;
-  margin-top: 2rem; /* space between aside and citations */
-  margin-left: 0; /* aligns with main-text start */
+  margin-top: 2rem;
+  margin-left: 0;
   padding: 1.2rem 1.5rem;
   background-color: #e6ffee;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   position: relative;
   z-index: 1;
-  transform: translateX(-2rem); /* shifts left to match paragraph start */
+  transform: translateX(-2rem);
 }
 
 .citations h2 {
@@ -135,7 +162,7 @@ header p {
   border-bottom: 2px dashed #b2f2bb;
   display: inline-block;
   padding-bottom: 0.3rem;
-  width: 60%; /* extends dashed line */
+  width: 60%;
 }
 
 .citations ul li {
@@ -169,8 +196,15 @@ header p {
     transform: none;
     padding: 1.2rem;
   }
+
   .citations h2 {
     width: auto;
+  }
+
+  .bulb {
+    width: 45px;
+    top: 1rem;
+    right: 1rem;
   }
 }
 
@@ -287,10 +321,6 @@ header p {
 
 /* --- Mobile Footer & Container Fix --- */
 @media (max-width: 780px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .container {
     margin: 1rem;
     padding: 1.5rem;
