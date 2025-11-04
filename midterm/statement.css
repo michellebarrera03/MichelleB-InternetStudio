@@ -117,7 +117,7 @@ header p {
 /* --- Citations --- */
 .citations {
   max-width: 65%;
-  margin-top: -0.5rem;
+  margin-top: 2rem; /* adds nice space so it doesn’t touch the aside */
   margin-left: 0; 
   padding: 1rem 1.5rem;
   background-color: #e6ffee;
