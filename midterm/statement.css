@@ -292,6 +292,14 @@ header p {
     margin-right: auto;
     transform: translateY(-1rem); /* tucks slightly under the aside */
   }
+    @media (max-width: 900px) {
+  .citations {
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+}
+
 }
 
 /* Citation title & links */
