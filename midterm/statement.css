@@ -36,7 +36,7 @@ nav ul li a {
 /* --- Nav Link Hover Highlight --- */
 nav ul li a:hover {
   color: #ffffff;          /* white text on hover */
-  background-color: #0f2a18; /* pastel pink highlight */
+  background-color: #b9fbc0; /* pastel pink highlight */
   transform: scale(1.05);
 }
 
