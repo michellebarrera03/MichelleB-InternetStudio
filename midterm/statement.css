@@ -26,11 +26,28 @@ nav a {
   text-decoration: none;
   color: #444;
   font-weight: 500;
+  position: relative;       /* needed for highlight effect */
   transition: all 0.3s ease;
 }
 
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(185, 251, 192, 0.3); /* mint green highlight */
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 nav a:hover {
-  color: #80ed99;
+  color: #80ed99;  /* text color change on hover */
   transform: scale(1.05);
 }
 /* --- Right-side buttons --- */
