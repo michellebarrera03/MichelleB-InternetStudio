@@ -13,6 +13,7 @@ nav {
   position: relative;
 }
 
+/* --- Nav Links --- */
 nav ul {
   display: flex;
   justify-content: center;
@@ -26,13 +27,17 @@ nav a {
   text-decoration: none;
   color: #444;
   font-weight: 500;
+  padding: 6px 12px;      /* bubble padding */
+  border-radius: 8px;     /* rounded bubble */
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #80ed99;
-  transform: scale(1.05);
+  color: #14532d;            /* darker mint text */
+  background-color: #b9fbc0; /* pastel mint bubble */
+  transform: scale(1.05);    /* slight pop effect */
 }
+
 /* --- Right-side buttons --- */
 .nav-buttons {
   position: absolute;
@@ -46,8 +51,8 @@ nav a:hover {
 /* --- Buttons style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
-  background-color: #b9fbc0;         /* mint green button */
-  color: #14532d;                     /* dark green text */
+  background-color: #b9fbc0;  /* mint green button */
+  color: #14532d;              /* dark green text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -57,38 +62,32 @@ nav a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;         /* lighter mint hover */
-  color: #0f2a18;                     /* darker text on hover */
+  background-color: #80ed99;  /* lighter mint hover */
+  color: #0f2a18;             /* darker text on hover */
   transform: scale(1.05);
 }
 
-/* --- Mobile-only fix: iPhone / small screens --- */
+/* --- Mobile/iPhone Only --- */
 @media (max-width: 600px) {
   .nav-buttons {
     position: static;        /* remove absolute positioning */
     transform: none;         /* remove vertical translate */
     justify-content: center; /* center horizontally */
     margin-top: 10px;        /* spacing below nav links */
-    width: 100%;             /* ensure full-width container */
+    width: 100%;             /* full-width container */
   }
 
   .nav-btn {
     font-size: 1rem;
     padding: 7px 14px;
   }
-}
-nav a {
-  font-family: 'Fredoka', sans-serif;
-  text-decoration: none;
-  color: #444;
-  font-weight: 500;
-  transition: all 0.3s ease;
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
-nav a:hover {
-  color: #80ed99;
-  transform: scale(1.05);
-}
 /* --- Body --- */
 body {
   font-family: 'Fredoka', sans-serif;
