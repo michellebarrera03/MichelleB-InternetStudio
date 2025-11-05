@@ -4,7 +4,7 @@
 nav {
   background-color: #ffffff;             /* white background */
   padding: 1rem 0;
-  border-bottom: 3px dashed #f3c1e5;    /* pastel pink-purple border */
+  border-bottom: 3px dashed #e8c7fa;    /* pastel purple border */
   position: relative;                    /* for right-side buttons */
 }
 
@@ -30,8 +30,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff8ac0;                        /* hot pastel pink on hover */
-  background-color: #ffe6f2;             /* light pastel pink hover */
+  color: #fbe2f6;                        /* pastel pink text on hover */
+  background-color: #e8c7fa;             /* pastel purple hover */
   transform: scale(1.05);
 }
 
@@ -48,7 +48,7 @@ nav ul li a:hover {
 .nav-btn {
   font-family: "Fredoka", sans-serif;
   background-color: #fbe2f6;             /* pastel pink button */
-  color: #6b4c7b;                         /* darker purple text */
+  color: #6b4c7b;                         /* slightly darker purple text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -58,12 +58,12 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #e8c7fa;             /* light pastel lavender/pink hover */
+  background-color: #e8c7fa;             /* pastel purple hover */
   color: #4b2e63;                         /* darker purple text */
   transform: scale(1.05);
 }
 
-/* --- Mobile-only fix: center buttons on iPhone / small screens --- */
+/* --- Mobile-only fix: center buttons on small screens --- */
 @media (max-width: 600px) {
   .nav-buttons {
     position: static;
@@ -78,6 +78,7 @@ nav ul li a:hover {
     padding: 7px 14px;
   }
 }
+
 
 /* --- Body Container --- */
 body {
