@@ -10,11 +10,11 @@ body {
 /* --- Navigation --- */
 nav {
 	background-color: #fff;
-	padding: 1.4rem 0; /* increased vertical padding */
+	padding: 1.8rem 0; /* increased vertical padding */
 	border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
 	position: relative; /* allows right-side buttons to sit inside */
-	font-size: 1.2rem; /* larger text size */
-	font-weight: 600; /* makes the text pop a bit more */
+	font-size: 1.3rem; /* slightly larger base font */
+	font-weight: 600;
 }
 
 /* Centered nav links */
@@ -23,7 +23,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	gap: 2rem;
+	gap: 2.4rem; /* slightly wider spacing */
 	margin: 0;
 	padding: 0;
 }
@@ -33,7 +33,7 @@ nav {
 	text-decoration: none;
 	color: #555;
 	font-weight: 500;
-	font-size: 1.05rem;
+	font-size: 1.15rem; /* larger link text */
 	transition: all 0.3s ease;
 }
 
@@ -41,7 +41,7 @@ nav {
 	color: #ff8ac0; /* pastel pink hover */
 	background-color: #ffe6f2;
 	border-radius: 8px;
-	padding: 4px 10px;
+	padding: 6px 12px; /* slightly more padding */
 }
 
 /* --- Right-side buttons --- */
@@ -51,7 +51,7 @@ nav {
 	top: 50%;
 	transform: translateY(-50%);
 	display: flex;
-	gap: 0.75rem;
+	gap: 1rem; /* slightly wider spacing */
 }
 
 .nav-btn {
@@ -61,9 +61,9 @@ nav {
 	text-decoration: none;
 	font-weight: 600;
 	border-radius: 25px;
-	padding: 6px 14px;
+	padding: 8px 18px; /* larger buttons */
 	transition: all 0.3s ease;
-	font-size: 0.95rem;
+	font-size: 1.05rem; /* bigger text */
 }
 
 .nav-btn:hover {
@@ -71,18 +71,19 @@ nav {
 	color: #4b2e63;
 	transform: scale(1.05);
 }
+
 /* --- Mobile Fix for Right-Side Buttons --- */
 @media (max-width: 600px) {
   .nav-buttons {
-    position: static; /* keeps them from overlapping on small screens */
+    position: static;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 10px;
     transform: none;
   }
 
   .nav-btn {
-    font-size: 0.9rem;
-    padding: 5px 10px;
+    font-size: 1rem;
+    padding: 7px 14px;
   }
 }
 
