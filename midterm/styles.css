@@ -10,24 +10,25 @@ body {
 /* --- Navigation Bar --- */
 nav {
   display: flex;
-  justify-content: space-between; /* left/center/right separation */
+  justify-content: space-between; /* left (logo), center links, right buttons */
   align-items: center;
-  background-color: #ffffff; /* pastel white for nav background */
+  width: 100%; /* full width */
+  background-color: #ffffff; /* pastel white background */
   padding: 1rem 2rem;
   border-bottom: 3px dashed #a68ac3; /* pastel purple accent */
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   font-family: "Fredoka", sans-serif;
+  position: sticky; /* stays visible when scrolling */
+  top: 0;
+  z-index: 100;
 }
 
 /* --- Center Links --- */
 .nav-center {
   display: flex;
   justify-content: center;
-  flex: 1; /* allows perfect centering */
   gap: 2rem;
+  flex-grow: 1; /* takes remaining space between left & right */
 }
 
 .nav-center a {
@@ -42,8 +43,8 @@ nav {
 }
 
 .nav-center a:hover {
-  background-color: #d6c1e8; /* soft pastel purple background */
-  color: #5a3f75; /* darker purple for contrast */
+  background-color: #d6c1e8; /* soft pastel purple */
+  color: #5a3f75; /* darker purple text */
 }
 
 /* --- Right Side Buttons --- */
@@ -61,32 +62,34 @@ nav {
   border-radius: 25px;
   font-weight: 600;
   font-size: 1rem;
+  white-space: nowrap; /* prevents text from wrapping */
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-right a:hover {
-  background-color: #ffb6c1; /* slightly darker pastel pink on hover */
+  background-color: #ffb6c1; /* darker pastel pink on hover */
   transform: scale(1.05);
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
   }
 
   .nav-center {
-    flex-wrap: wrap;
+    order: 2; /* center links below logo if any */
+    width: 100%;
     justify-content: center;
-    gap: 1.2rem;
+    margin: 0.5rem 0;
+    gap: 1rem;
   }
 
   .nav-right {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8rem;
+    order: 1; /* right buttons on top for mobile */
+    margin-bottom: 0.5rem;
   }
 
   .nav-center a {
@@ -95,9 +98,9 @@ nav {
 
   .nav-right a {
     font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
   }
 }
-
 
 
 /* Hero Section */
