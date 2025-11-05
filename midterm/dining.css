@@ -304,44 +304,6 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 /* --- Nav Buttons --- */
-.nav-buttons {
-    display: flex;
-    justify-content: flex-end; /* keeps buttons on the right on desktop */
-    align-items: flex-start;   /* aligns buttons to the top of the nav */
-    gap: 1rem;
-    margin-left: 0;            /* removes any extra horizontal spacing */
-}
-
-/* --- Nav Buttons --- */
-.nav-buttons {
-    display: flex;
-    justify-content: flex-end; /* keeps buttons on the right */
-    align-items: center;       /* vertically aligns buttons with the nav tabs */
-    gap: 1rem;
-    margin-top: auto;            /* no extra left spacing */
-    height: 100%;              /* ensures buttons fill nav height for proper alignment */
-}
-
-/* --- Button Styling --- */
-.nav-btn {
-    background-color: #a3d8f4;
-    color: #ffffff;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    border: none;
-    border-radius: 15px;       /* slightly smaller radius for compact look */
-    padding: 0.25rem 0.8rem;   /* smaller padding to reduce vertical height */
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;        /* slightly smaller font to match nav height */
-}
-
-/* --- Hover Effect --- */
-.nav-btn:hover {
-    background-color: #74c0fc;
-    transform: scale(1.05);
-}
 
 
 /* --- Mobile View (center only on phone) --- */
