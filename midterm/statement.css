@@ -6,13 +6,23 @@
   box-sizing: border-box;
 }
 
-/* Centered nav links */
+/* --- Navigation --- */
+nav {
+	background-color: #fff;
+	padding: 1.8rem 0; /* keep vertical padding */
+	border-bottom: 3px dashed #b9fbc0; /* mint green border */
+	position: relative; /* keeps buttons positioned correctly */
+	font-size: 1.3rem; /* slightly larger font */
+	font-weight: 600;
+}
+
+/* --- Centered nav links --- */
 .nav-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	gap: 2.4rem; /* slightly wider spacing */
+	gap: 2.4rem; /* spacing between links */
 	margin: 0;
 	padding: 0;
 }
@@ -20,15 +30,15 @@
 .nav-links a {
 	font-family: "Fredoka", sans-serif;
 	text-decoration: none;
-	color: #444; /* darker mint-aligned text */
+	color: #444; /* dark mint-aligned text */
 	font-weight: 500;
-	font-size: 1.15rem; /* larger link text */
+	font-size: 1.15rem;
 	transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
 	color: #80ed99; /* mint hover color */
-	background-color: #e7fff3; /* soft mint background hover */
+	background-color: #e7fff3; /* soft mint background on hover */
 	border-radius: 8px;
 	padding: 6px 12px;
 }
@@ -45,7 +55,7 @@
 
 .nav-btn {
 	font-family: "Fredoka", sans-serif;
-	background-color: #b9fbc0; /* main mint color */
+	background-color: #b9fbc0; /* mint main button color */
 	color: #333; /* dark text for contrast */
 	text-decoration: none;
 	font-weight: 600;
@@ -63,17 +73,21 @@
 
 /* --- Mobile Fix for Right-Side Buttons --- */
 @media (max-width: 600px) {
-  .nav-buttons {
-    position: static;
-    justify-content: center; /* center on mobile */
-    margin-top: 10px;
-    transform: none;
-  }
+	.nav-buttons {
+		position: static;
+		justify-content: center; /* centered on mobile */
+		margin-top: 10px;
+		transform: none;
+		width: 100%; /* full width for nice alignment */
+		flex-wrap: wrap;
+	}
 
-  .nav-btn {
-    font-size: 1rem;
-    padding: 7px 14px;
-  }
+	.nav-btn {
+		font-size: 1rem;
+		padding: 7px 14px;
+		width: auto;
+		text-align: center;
+	}
 }
 
 
