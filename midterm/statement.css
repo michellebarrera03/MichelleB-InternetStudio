@@ -51,20 +51,37 @@ nav a:hover {
 /* --- Buttons style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
-  background-color: #b9fbc0;  /* mint green button */
-  color: #14532d;              /* dark green text */
+  background-color: #b9fbc0;         /* mint green button */
+  color: #14532d;                     /* dark green text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
   padding: 8px 18px;
   transition: all 0.3s ease;
   font-size: 1.05rem;
+  position: relative;                 /* needed for hover bubble */
+  overflow: hidden;                   /* contain the bubble effect */
+}
+
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: rgba(128, 237, 153, 0.3); /* light mint bubble */
+  transform: skewX(-20deg);
+  transition: all 0.4s ease;
+}
+
+.nav-btn:hover::after {
+  left: 100%;
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;  /* lighter mint hover */
-  color: #0f2a18;             /* darker text on hover */
-  transform: scale(1.05);
+  background-color: #80ed99;         /* lighter mint hover */
+  color: #0f2a18;                     /* darker text on hover */
 }
 
 /* --- Mobile/iPhone Only --- */
