@@ -307,9 +307,9 @@ nav ul li a:hover {
 .nav-buttons {
     display: flex;
     justify-content: flex-end; /* keeps buttons on the right on desktop */
-    align-items: center;       /* vertically centers them */
+    align-items: flex-start;   /* aligns buttons to the top of the nav */
     gap: 1rem;
-    margin-left: 0;            /* remove extra auto margin */
+    margin-left: 0;            /* removes any extra horizontal spacing */
 }
 
 /* --- Button Styling --- */
@@ -320,11 +320,11 @@ nav ul li a:hover {
     font-weight: 500;
     border: none;
     border-radius: 25px;
-    padding: 0.4rem 1rem;      /* slightly smaller padding to reduce height */
+    padding: 0.4rem 1rem;      /* keeps buttons smaller and inline with nav */
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1rem;           /* keeps text readable without stretching nav */
+    font-size: 1rem;
 }
 
 /* --- Hover Effect --- */
