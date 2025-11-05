@@ -10,10 +10,11 @@ body {
 /* --- Navigation --- */
 nav {
 	background-color: #fff;
-	padding: 0.6rem 0; /* reduced vertical padding */
+	padding: 1.4rem 0; /* increased vertical padding */
 	border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
-	position: relative; /* keeps right-side buttons aligned properly */
-	font-size: 0.95rem; /* makes nav text a bit smaller */
+	position: relative; /* allows right-side buttons to sit inside */
+	font-size: 1.2rem; /* larger text size */
+	font-weight: 600; /* makes the text pop a bit more */
 }
 
 /* Centered nav links */
