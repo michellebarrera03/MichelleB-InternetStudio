@@ -11,38 +11,35 @@
 nav {
   background-color: #ffffff;
   padding: 1rem 0;
-  border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
-  position: relative;                 /* for right-side buttons */
+  border-bottom: 3px dashed #bde0fe; /* pastel blue accent */
+  position: relative; /* for the buttons */
 }
 
-/* --- Centered nav links --- */
+/* --- Main nav links --- */
 nav ul {
   display: flex;
-  justify-content: center;   /* keep links centered */
+  justify-content: flex-start; /* keep left-to-right on desktop */
   align-items: center;
   list-style: none;
   gap: 2rem;
-  margin: 0;
+  margin: 0 2rem; /* optional spacing from edges */
   padding: 0;
 }
 
 nav ul li a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #444;               /* dark gray text */
+  color: #555;
   font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 8px;        /* rounded background on hover */
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffffff;            /* white text on hover */
-  background-color: #80ed99; /* mint green highlight */
+  color: #74c0fc; /* bright pastel blue on hover */
   transform: scale(1.05);
 }
 
-/* --- Right-side buttons --- */
+/* --- Special buttons --- */
 .nav-buttons {
   position: absolute;
   right: 2rem;
@@ -53,7 +50,7 @@ nav ul li a:hover {
 }
 
 .nav-btn {
-  font-family: "Fredoka", sans-serif;
+  font-family: 'Fredoka', sans-serif;
   background-color: #b9fbc0;  /* mint green button */
   color: #14532d;              /* dark green text */
   text-decoration: none;
@@ -65,23 +62,18 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;  /* lighter mint hover */
-  color: #0f2a18;             /* darker text on hover */
+  background-color: #80ed99;
+  color: #0f2a18;
   transform: scale(1.05);
 }
 
 /* --- Mobile adjustments --- */
 @media (max-width: 600px) {
-  nav ul {
-    justify-content: center;   /* still keep links centered on mobile */
-    flex-wrap: wrap;           /* wrap if very narrow screen */
-  }
-
   .nav-buttons {
     position: static;          /* drop buttons below nav links */
     transform: none;
-    justify-content: center;   /* center horizontally below links */
-    margin-top: 10px;
+    justify-content: center;   /* center horizontally */
+    margin: 10px 0 0 0;
     width: 100%;
   }
 
