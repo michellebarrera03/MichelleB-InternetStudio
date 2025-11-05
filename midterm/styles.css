@@ -15,10 +15,10 @@ nav {
 	position: relative; /* allows right-side buttons to sit inside */
 	font-size: 1.3rem; /* slightly larger base font */
 	font-weight: 600;
-	flex-wrap: wrap;/* delete after this if it dont work */
+	flex-wrap: nowrap;/* delete after this if it dont work */
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 /* Centered nav links */
@@ -54,7 +54,9 @@ nav {
 	gap: 1rem;
 	margin-left: auto;
 	align-items: center;
-	white-space: nowrap; /* keeps them in one line */
+	margin-left: auto; /* keeps them on the right */
+  position: relative; /* no absolute positioning */
+  white-space: nowrap;
 }
 
 .nav-btn {
