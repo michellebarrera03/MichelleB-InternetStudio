@@ -304,6 +304,36 @@ nav ul li a:hover {
 }
 /* --- Nav Buttons --- */
 
+/* --- Nav Buttons (Book Now, Park Map, Contact) --- */
+.nav-buttons {
+    display: flex;
+    gap: 1rem; /* space between buttons */
+}
+
+/* Buttons style */
+.nav-btn {
+    background-color: #a3d8f4; /* soft pastel blue */
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #74c0fc; /* hover color */
+    transform: scale(1.05);
+}
+
+/* --- Desktop layout: Buttons aligned right of tabs --- */
+nav {
+    display: flex;
+    justify-content: space-between; /* tabs left, buttons right */
+    align-items: center;
+}
+
 
 /* --- Mobile View (center only on phone) --- */
 @media (max-width: 600px) {
