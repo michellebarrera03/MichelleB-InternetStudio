@@ -69,6 +69,20 @@ nav {
 	color: #4b2e63;
 	transform: scale(1.05);
 }
+/* --- Mobile Fix for Right-Side Buttons --- */
+@media (max-width: 600px) {
+  .nav-buttons {
+    position: static; /* keeps them from overlapping on small screens */
+    justify-content: center;
+    margin-top: 8px;
+    transform: none;
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+}
 
 /* --- Hero Section --- */
 .hero {
