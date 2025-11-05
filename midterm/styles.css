@@ -14,7 +14,7 @@ nav {
   align-items: center;
   background-color: #ffffff; /* pastel white for nav background */
   padding: 1rem 2rem;
-  border-bottom: 3px dashed #b9fbc0; /* mint accent */
+  border-bottom: 3px dashed #a68ac3; /* pastel purple accent */
   flex-wrap: wrap;
   position: relative;
   z-index: 100;
@@ -26,15 +26,15 @@ nav {
 .nav-center {
   display: flex;
   justify-content: center;
-  flex: 1; /* takes up available space to center properly */
-  gap: 1.8rem;
+  flex: 1; /* allows perfect centering */
+  gap: 2rem;
 }
 
 .nav-center a {
   text-decoration: none;
-  color: #333; /* dark gray text */
+  color: #7b6d8d; /* pastel purple text */
   font-weight: 600;
-  font-size: 1.2rem; /* slightly bigger */
+  font-size: 1.25rem; /* slightly bigger */
   padding: 0.5rem 1rem;
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -42,8 +42,8 @@ nav {
 }
 
 .nav-center a:hover {
-  background-color: #d6f5e4; /* soft mint hover background */
-  color: #0b8a6e; /* darker green for contrast */
+  background-color: #d6c1e8; /* soft pastel purple background */
+  color: #5a3f75; /* darker purple for contrast */
 }
 
 /* --- Right Side Buttons --- */
@@ -55,8 +55,8 @@ nav {
 
 .nav-right a {
   text-decoration: none;
-  background-color: #b9fbc0; /* mint theme button */
-  color: #333;
+  background-color: #ffd6e0; /* pastel pink button */
+  color: #7b6d8d; /* pastel purple text */
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-weight: 600;
@@ -65,7 +65,7 @@ nav {
 }
 
 .nav-right a:hover {
-  background-color: #9fe6ac; /* darker mint hover */
+  background-color: #ffb6c1; /* slightly darker pastel pink on hover */
   transform: scale(1.05);
 }
 
@@ -90,14 +90,13 @@ nav {
   }
 
   .nav-center a {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .nav-right a {
     font-size: 0.95rem;
   }
 }
-
 
 
 
