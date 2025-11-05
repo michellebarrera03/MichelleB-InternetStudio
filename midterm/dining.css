@@ -30,15 +30,15 @@ nav a:hover {
 }
 /* --- Tabs (Home, Things to Do, etc.) --- */
 nav ul li a {
-    font-family: 'Fredoka', sans-serif;
-    text-decoration: none;
-    color: #555;
-    font-weight: 600;        /* slightly bolder */
-    font-size: 1.3rem;       /* bigger text */
-    padding: 1rem 0.8rem;    /* more vertical spacing */
-    display: inline-block;   /* ensures padding affects layout */
-    transition: all 0.3s ease;
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  padding: 4px 8px;       /* space for highlight */
+  border-radius: 8px;     /* round the hover background */
+  transition: all 0.3s ease;
 }
+
 * {
     margin: 0;
     padding: 0;
