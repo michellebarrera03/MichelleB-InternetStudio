@@ -1,36 +1,74 @@
 /* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* --- Navigation Bar --- */
 nav {
     background-color: #ffffff;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
     border-bottom: 3px dashed #bde0fe; /* pastel blue accent */
+    display: flex;           /* make nav a flex container */
+    align-items: center;     /* vertical center */
+    gap: 1rem;               /* spacing between ul and buttons */
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* nav links centered */
     align-items: center;
     list-style: none;
     gap: 2rem;
 }
 
-nav a {
+nav ul li a {
     font-family: 'Fredoka', sans-serif;
     text-decoration: none;
     color: #555;
     font-weight: 500;
     transition: all 0.3s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
 }
 
-nav a:hover {
-    color: #74c0fc; /* bright pastel blue on hover */
+nav ul li a:hover {
+    background-color: #bde0fe; /* soft pastel blue highlight */
     transform: scale(1.05);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* --- New Nav Buttons (Book Now, Park Map, Contact) --- */
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;       /* push buttons to far right */
+}
+
+.nav-buttons .nav-btn {
+    background-color: #a3d8f4; /* match restaurant button theme */
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons .nav-btn:hover {
+    background-color: #74c0fc; /* brighter pastel blue on hover */
+    transform: scale(1.05);
+}
+
+/* --- Center the new buttons on mobile only --- */
+@media (max-width: 600px) {
+    .nav-buttons {
+        justify-content: center;
+        margin: 1rem 0 0 0; /* spacing from nav links */
+        width: 100%;
+    }
 }
 
 /* --- Body Container --- */
@@ -119,6 +157,41 @@ section h2 {
     color: #444;
 }
 
+/* --- Buttons for Restaurant Cards --- */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.btn {
+    background-color: #a3d8f4; /* soft pastel blue */
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 180px;
+    box-shadow: 0 3px 6px rgba(163, 216, 244, 0.5);
+}
+
+.btn:hover {
+    background-color: #74c0fc; /* brighter pastel blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(94, 184, 255, 0.5);
+}
+
+.btn:active {
+    background-color: #5eb8ff; /* pressed state */
+    transform: scale(0.98);
+}
+
 /* ---------------- Footer (site-wide) ---------------- */
 .site-footer {
   background: linear-gradient(180deg, #e3f2fd 0%, #f4fbff 100%);
@@ -138,7 +211,6 @@ section h2 {
   flex-wrap: wrap;
 }
 
-/* Brand column */
 .footer-brand h4 {
   margin: 0 0 6px;
   color: #5eb8ff; /* bright sky blue */
@@ -153,7 +225,6 @@ section h2 {
   color: #555;
 }
 
-/* Contact column */
 .footer-contact {
   min-width: 220px;
 }
@@ -202,7 +273,6 @@ section h2 {
   text-decoration: underline;
 }
 
-/* Info column */
 .footer-info {
   min-width: 200px;
 }
@@ -219,7 +289,6 @@ section h2 {
   font-size: 0.9rem;
 }
 
-/* bottom row */
 .footer-bottom {
   max-width: 1100px;
   margin: 12px auto 0;
@@ -230,7 +299,7 @@ section h2 {
   border-top: 1px dashed rgba(94,184,255,0.2);
 }
 
-/* Responsive adjustments */
+/* Footer responsive */
 @media (max-width: 780px) {
   .footer-inner {
     gap: 18px;
@@ -249,110 +318,3 @@ section h2 {
     width: 80px;
   }
 }
-/* --- Buttons for Restaurant Cards (blue theme) --- */
-.button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  margin-top: 1rem;
-  align-items: center;
-}
-
-.btn {
-  background-color: #a3d8f4; /* soft pastel blue */
-  color: #ffffff;
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 500;
-  border: none;
-  border-radius: 25px;
-  padding: 0.6rem 1.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 180px;
-  box-shadow: 0 3px 6px rgba(163, 216, 244, 0.5);
-}
-
-.btn:hover {
-  background-color: #74c0fc; /* brighter pastel blue on hover */
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(94, 184, 255, 0.5);
-}
-
-.btn:active {
-  background-color: #5eb8ff; /* pressed state */
-  transform: scale(0.98);
-}
-/* --- New Nav Buttons --- */
-.nav-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto; /* push to the right on desktop */
-}
-
-.nav-buttons .nav-btn {
-    background-color: #a3d8f4; /* match restaurant button theme */
-    color: #ffffff;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    border: none;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-buttons .nav-btn:hover {
-    background-color: #74c0fc;
-    transform: scale(1.05);
-}
-
-/* --- Center these buttons on mobile only --- */
-@media (max-width: 600px) {
-    .nav-buttons {
-        justify-content: center;
-        margin: 1rem 0 0 0; /* spacing from nav links */
-        width: 100%;
-    }
-}
-/* --- Highlight background for original nav links on hover --- */
-nav ul li a:hover {
-    background-color: #bde0fe; /* soft pastel blue highlight */
-    padding: 0.3rem 0.6rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-/* --- New Nav Buttons (Book Now, Park Map, Contact) --- */
-.nav-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto; /* push to the right on desktop */
-}
-
-.nav-buttons .nav-btn {
-    background-color: #a3d8f4; /* match restaurant button theme */
-    color: #ffffff;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    border: none;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-buttons .nav-btn:hover {
-    background-color: #74c0fc; /* brighter pastel blue on hover */
-    transform: scale(1.05);
-}
-
-/* --- Center the new buttons on mobile only --- */
-@media (max-width: 600px) {
-    .nav-buttons {
-        justify-content: center;
-        margin: 1rem 0 0 0; /* spacing from nav links */
-        width: 100%;
-    }
-}
-
