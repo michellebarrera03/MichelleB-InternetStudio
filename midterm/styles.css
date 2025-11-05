@@ -72,20 +72,7 @@ nav {
 	transform: scale(1.05);
 }
 
-/* --- Mobile Fix for Right-Side Buttons --- */
-@media (max-width: 600px) {
-  .nav-buttons {
-    position: static;
-    justify-content: center;
-    margin-top: 10px;
-    transform: none;
-  }
 
-  .nav-btn {
-    font-size: 1rem;
-    padding: 7px 14px;
-  }
-}
 
 
 /* --- Hero Section --- */
