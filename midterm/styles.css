@@ -15,6 +15,10 @@ nav {
 	position: relative; /* allows right-side buttons to sit inside */
 	font-size: 1.3rem; /* slightly larger base font */
 	font-weight: 600;
+	flex-wrap: wrap;/* delete after this if it dont work */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Centered nav links */
