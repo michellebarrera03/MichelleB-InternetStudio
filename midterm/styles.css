@@ -11,7 +11,7 @@ body {
 nav {
 	background-color: #fff;
 	padding: 1.8rem 0; /* increased vertical padding */
-	border-bottom: 3px dashed #b9fbc0; /* pastel mint green border */
+	border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
 	position: relative; /* allows right-side buttons to sit inside */
 	font-size: 1.3rem; /* slightly larger base font */
 	font-weight: 600;
@@ -31,15 +31,15 @@ nav {
 .nav-links a {
 	font-family: "Fredoka", sans-serif;
 	text-decoration: none;
-	color: #444;
+	color: #555;
 	font-weight: 500;
 	font-size: 1.15rem; /* larger link text */
 	transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-	color: #2aa876; /* mint green hover */
-	background-color: #e6ffee; /* pale mint background */
+	color: #ff8ac0; /* pastel pink hover */
+	background-color: #ffe6f2;
 	border-radius: 8px;
 	padding: 6px 12px; /* slightly more padding */
 }
@@ -56,8 +56,8 @@ nav {
 
 .nav-btn {
 	font-family: "Fredoka", sans-serif;
-	background-color: #b9fbc0; /* mint green button */
-	color: #2a654c; /* darker mint text */
+	background-color: #fbe2f6;
+	color: #6b4c7b;
 	text-decoration: none;
 	font-weight: 600;
 	border-radius: 25px;
@@ -67,8 +67,8 @@ nav {
 }
 
 .nav-btn:hover {
-	background-color: #80ed99; /* brighter mint hover */
-	color: #155d42;
+	background-color: #e8c7fa; /* pastel lavender hover */
+	color: #4b2e63;
 	transform: scale(1.05);
 }
 
@@ -86,6 +86,7 @@ nav {
     padding: 7px 14px;
   }
 }
+
 
 /* --- Hero Section --- */
 .hero {
