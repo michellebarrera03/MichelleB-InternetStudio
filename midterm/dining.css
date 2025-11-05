@@ -318,7 +318,7 @@ nav ul li a:hover {
     justify-content: flex-end; /* keeps buttons on the right */
     align-items: center;       /* vertically aligns buttons with the nav tabs */
     gap: 1rem;
-    margin-left: 0;            /* no extra left spacing */
+    margin-top: auto;            /* no extra left spacing */
     height: 100%;              /* ensures buttons fill nav height for proper alignment */
 }
 
