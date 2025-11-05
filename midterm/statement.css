@@ -22,56 +22,58 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Navigation Bar --- */
+/* --- Navigation --- */
 nav {
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  border-bottom: 3px dashed #b9fbc0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* allow wrapping on smaller screens */
-  gap: 1rem;
+  background-color: #fff;
+  padding: 1.8rem 0; /* taller navbar */
+  border-bottom: 3px dashed #f3c1e5; /* pastel pink-purple */
+  position: relative; /* allows right-side buttons to sit inside */
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-/* Nav Links */
+/* Centered nav links */
 .nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   text-decoration: none;
-  color: #444;
+  color: #555;
   font-weight: 500;
   font-size: 1.15rem;
-  padding: 6px 12px; /* same for normal and hover to prevent jump */
+  padding: 6px 12px; /* same padding for normal & hover to prevent jump */
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #80ed99;
-  background-color: #e6fff5;
+  color: #ff8ac0;
+  background-color: #ffe6f2;
   transform: scale(1.05);
 }
 
 /* Right-side buttons */
 .nav-buttons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   gap: 1rem;
 }
 
 .nav-btn {
-  font-family: 'Fredoka', sans-serif;
-  background-color: #b9fbc0;
-  color: #1e6b4b;
+  font-family: "Fredoka", sans-serif;
+  background-color: #fbe2f6;
+  color: #6b4c7b;
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -81,33 +83,35 @@ nav {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;
-  color: #14432b;
+  background-color: #e8c7fa;
+  color: #4b2e63;
   transform: scale(1.05);
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
+/* --- Mobile Fix --- */
+@media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    gap: 0.8rem;
+    padding: 1rem 0;
   }
 
   .nav-links {
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
   .nav-buttons {
+    position: static;
+    transform: none;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    margin-top: 10px;
   }
 
   .nav-btn {
-    padding: 7px 14px;
     font-size: 1rem;
+    padding: 7px 14px;
   }
 }
+
 /* --- Body --- */
 body {
   font-family: 'Fredoka', sans-serif;
