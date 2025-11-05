@@ -6,99 +6,33 @@
   box-sizing: border-box;
 }
 
-/* --- Reset --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* --- Body --- */
-body {
-  font-family: 'Fredoka', sans-serif;
-  background-color: #f6fff9;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-/* --- Navigation --- */
+/* --- Navigation Bar --- */
 nav {
-  background-color: #fff;
-  padding: 1.8rem 2rem;
-  border-bottom: 3px dashed #f3c1e5; /* pastel pink-purple */
-  font-size: 1.3rem;
-  font-weight: 600;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
 }
 
-/* Flex container: links + buttons */
-nav .nav-container {
+nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Nav links */
-.nav-links {
-  display: flex;
-  gap: 2.4rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 2rem;
 }
 
-.nav-links a {
-  font-family: "Fredoka", sans-serif;
+nav a {
+  font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #555;
+  color: #444;
   font-weight: 500;
-  font-size: 1.15rem;
-  padding: 6px 12px;
-  border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #ff8ac0;
-  background-color: #ffe6f2;
+nav a:hover {
+  color: #80ed99;
   transform: scale(1.05);
 }
-
-/* Buttons in nav */
-.nav-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-btn {
-  font-family: "Fredoka", sans-serif;
-  background-color: #fbe2f6;
-  color: #6b4c7b;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 25px;
-  padding: 8px 18px;
-  transition: all 0.3s ease;
-  font-size: 1.05rem;
-}
-
-.nav-btn:hover {
-  background-color: #e8c7fa;
-  color: #4b2e63;
-  transform: scale(1.05);
-}
-
-/* --- Mobile (only buttons centered) --- */
-@media (max-width: 600px) {
-  .nav-buttons {
-    justify-content: center;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-}
-
 
 /* --- Body --- */
 body {
