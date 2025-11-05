@@ -1,1 +1,21 @@
 /* 
+/* --- Body --- */
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #f6fff9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
