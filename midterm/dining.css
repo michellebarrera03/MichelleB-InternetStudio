@@ -28,7 +28,15 @@ nav a:hover {
     color: #74c0fc; /* bright pastel blue on hover */
     transform: scale(1.05);
 }
-
+nav ul li a {
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600; /* slightly bolder */
+    font-size: 1.1rem; /* bigger text */
+    padding: 0.8rem 0.6rem; /* centers vertically */
+    transition: all 0.3s ease;
+}
 * {
     margin: 0;
     padding: 0;
