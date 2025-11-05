@@ -10,20 +10,22 @@ body {
 /* ---------------- Navigation ---------------- */
 nav {
   background-color: #ffe6f2;
-  padding: 15px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   animation: fadeInNav 1s ease-out;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  padding-inline: 2rem;
+  padding: 15px 0 10px;
+  gap: 12px;
 }
 
+/* Centered navigation links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
   margin: 0;
   padding: 0;
 }
@@ -32,19 +34,26 @@ nav {
   text-decoration: none;
   color: #7b6d8d;
   font-weight: 600;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
+/* Hover background indicator */
 .nav-links a:hover {
-  color: #a68ac3;
-  transform: scale(1.1);
+  background-color: #f6d7f5; /* light pastel lavender-pink */
+  color: #5c4d73; /* slightly darker text for contrast */
+  transform: translateY(-2px);
 }
 
 /* CTA Buttons */
 .cta-buttons {
   display: flex;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: 4px;
 }
 
 .cta-btn {
@@ -53,7 +62,7 @@ nav {
   font-weight: 600;
   color: #555;
   background-color: #ffd6e0;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: 25px;
   transition: all 0.3s ease;
   font-size: 0.95rem;
@@ -69,11 +78,9 @@ nav {
 .cta-btn.pink {
   background-color: #ffd6e0;
 }
-
 .cta-btn.mint {
   background-color: #c8f7dc;
 }
-
 .cta-btn.lilac {
   background-color: #e9d6ff;
 }
@@ -82,16 +89,14 @@ nav {
 .cta-btn.pink:hover {
   background-color: #ffb6c1;
 }
-
 .cta-btn.mint:hover {
   background-color: #b3f0ca;
 }
-
 .cta-btn.lilac:hover {
   background-color: #d9bdfd;
 }
 
-/* === Nav Animation === */
+/* Animation for nav */
 @keyframes fadeInNav {
   from {
     opacity: 0;
@@ -106,18 +111,15 @@ nav {
 /* --- Responsive Nav --- */
 @media (max-width: 850px) {
   nav {
-    flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 20px;
   }
 
   .cta-buttons {
     justify-content: center;
-  }
-
-  .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
   }
 }
 
