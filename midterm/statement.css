@@ -7,50 +7,8 @@
 
 /* --- Navigation Bar --- */
 
-/* --- Navigation Bar --- */
-nav {
-  background-color: #ffffff;
-  padding: 1rem 0;
-  border-bottom: 3px dashed #bde0fe; /* pastel blue accent */
-  position: relative; /* for the buttons */
-}
-
-/* --- Main nav links --- */
-nav ul {
-  display: flex;
-  justify-content: flex-start; /* keep left-to-right on desktop */
-  align-items: center;
-  list-style: none;
-  gap: 2rem;
-  margin: 0 2rem; /* optional spacing from edges */
-  padding: 0;
-}
-
-nav ul li a {
-  font-family: 'Fredoka', sans-serif;
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #74c0fc; /* bright pastel blue on hover */
-  transform: scale(1.05);
-}
-
-/* --- Special buttons --- */
-.nav-buttons {
-  position: absolute;
-  right: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  gap: 1rem;
-}
-
 .nav-btn {
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   background-color: #b9fbc0;  /* mint green button */
   color: #14532d;              /* dark green text */
   text-decoration: none;
@@ -62,19 +20,19 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;
-  color: #0f2a18;
+  background-color: #80ed99;  /* lighter mint hover */
+  color: #0f2a18;             /* darker text on hover */
   transform: scale(1.05);
 }
 
-/* --- Mobile adjustments --- */
+/* --- Mobile-only fix: iPhone / small screens --- */
 @media (max-width: 600px) {
   .nav-buttons {
-    position: static;          /* drop buttons below nav links */
-    transform: none;
-    justify-content: center;   /* center horizontally */
-    margin: 10px 0 0 0;
-    width: 100%;
+    position: static;        /* remove absolute positioning */
+    transform: none;         /* remove vertical translate */
+    justify-content: center; /* center horizontally */
+    margin-top: 10px;        /* spacing below nav links */
+    width: 100%;             /* ensure full-width container */
   }
 
   .nav-btn {
@@ -82,6 +40,7 @@ nav ul li a:hover {
     padding: 7px 14px;
   }
 }
+
 
 
 /* --- Body --- */
