@@ -7,12 +7,6 @@ body {
 	color: #555;
 }
 
-/* --- Reset --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* --- Navigation --- */
 nav {
