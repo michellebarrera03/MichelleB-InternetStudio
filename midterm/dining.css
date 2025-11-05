@@ -303,11 +303,14 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 /* --- Nav Buttons --- */
-
 /* --- Nav Buttons (Book Now, Park Map, Contact) --- */
 .nav-buttons {
     display: flex;
     gap: 1rem; /* space between buttons */
+    position: absolute; /* float buttons to the right */
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Buttons style */
@@ -327,18 +330,25 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* --- Desktop layout: Buttons aligned right of tabs --- */
-nav {
+/* Keep the tabs centered */
+nav ul {
     display: flex;
-    justify-content: space-between; /* tabs left, buttons right */
+    justify-content: center; /* tabs centered */
     align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    position: relative; /* so buttons align relative to nav */
 }
 
 /* --- Mobile layout: Center only the three buttons --- */
 @media (max-width: 600px) {
     .nav-buttons {
+        position: static; /* cancel absolute */
         justify-content: center;
         width: 100%;
         margin-top: 0.5rem; /* optional spacing below tabs */
+        transform: none;
     }
 }
