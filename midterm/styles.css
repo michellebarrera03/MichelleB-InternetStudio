@@ -7,48 +7,70 @@ body {
 	color: #555;
 }
 
-
 /* --- Navigation --- */
 nav {
-    background-color: #fff;
-    padding: 1rem 0;
-    border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
-    position: relative; /* so buttons can sit on the right */
+	background-color: #fff;
+	padding: 1rem 0;
+	border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
+	position: relative; /* allows right-side buttons to sit inside */
 }
 
 /* Centered nav links */
 .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
 }
 
 .nav-links a {
-    font-family: 'Fredoka', sans-serif;
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-    font-size: 1.05rem;
-    transition: all 0.3s ease;
+	font-family: "Fredoka", sans-serif;
+	text-decoration: none;
+	color: #555;
+	font-weight: 500;
+	font-size: 1.05rem;
+	transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #ff8ac0; /* pastel pink hover */
-    background-color: #ffe6f2;
-    border-radius: 8px;
-    padding: 4px 10px;
+	color: #ff8ac0; /* pastel pink hover */
+	background-color: #ffe6f2;
+	border-radius: 8px;
+	padding: 4px 10px;
 }
 
 /* --- Right-side buttons --- */
 .nav-buttons {
-    position:
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	gap: 0.75rem;
+}
 
+.nav-btn {
+	font-family: "Fredoka", sans-serif;
+	background-color: #fbe2f6;
+	color: #6b4c7b;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 25px;
+	padding: 6px 14px;
+	transition: all 0.3s ease;
+	font-size: 0.95rem;
+}
 
-/* Hero Section */
+.nav-btn:hover {
+	background-color: #e8c7fa; /* pastel lavender hover */
+	color: #4b2e63;
+	transform: scale(1.05);
+}
+
+/* --- Hero Section --- */
 .hero {
 	background-image: url("images/hero.jpg"); /* replace with your image file */
 	background-size: cover;
@@ -81,7 +103,7 @@ nav {
 	border-radius: 30px;
 	backdrop-filter: blur(8px);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-	animation: fadeInHero 1.2s ease-out; /* ✨ Added hero fade-in */
+	animation: fadeInHero 1.2s ease-out;
 }
 
 .hero h1 {
@@ -125,7 +147,7 @@ nav {
 	}
 }
 
-/* Intro Section */
+/* --- Intro Section --- */
 .intro {
 	text-align: center;
 	padding: 60px 20px;
@@ -136,7 +158,7 @@ nav {
 	color: #a68ac3;
 }
 
-/* Highlights */
+/* --- Highlights --- */
 .highlights {
 	padding: 60px 20px;
 	text-align: center;
@@ -153,7 +175,7 @@ nav {
 	background-color: #fff0f5;
 	padding: 20px;
 	border-radius: 20px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 	transition: transform 0.2s ease;
 }
 
@@ -165,132 +187,134 @@ nav {
 	color: #a477b4;
 }
 
-/* ---------------- Footer (site-wide) ---------------- */
+/* --- Footer --- */
 .site-footer {
-  background: linear-gradient(180deg, #fff6fb 0%, #f6eefc 100%);
-  border-top: 1px solid rgba(166,138,195,0.12);
-  color: #4b3a57;
-  padding: 28px 18px;
-  font-family: 'Fredoka', sans-serif;
+	background: linear-gradient(180deg, #fff6fb 0%, #f6eefc 100%);
+	border-top: 1px solid rgba(166, 138, 195, 0.12);
+	color: #4b3a57;
+	padding: 28px 18px;
+	font-family: "Fredoka", sans-serif;
 }
 
 .footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	gap: 30px;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-brand h4 {
-  margin: 0 0 6px;
-  color: #7a5f98;
-  font-family: 'Baloo 2', cursive;
-  font-size: 1.25rem;
+	margin: 0 0 6px;
+	color: #7a5f98;
+	font-family: "Baloo 2", cursive;
+	font-size: 1.25rem;
 }
 
 .footer-brand .tag {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #6b556f;
+	margin: 0;
+	font-size: 0.9rem;
+	color: #6b556f;
 }
 
 /* Contact column */
 .footer-contact {
-  min-width: 220px;
+	min-width: 220px;
 }
 
 .footer-contact h5 {
-  margin: 0 0 8px;
-  color: #6b4f8a;
-  font-size: 1rem;
+	margin: 0 0 8px;
+	color: #6b4f8a;
+	font-size: 1rem;
 }
 
 .footer-contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 10px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0;
 }
 
 .icon {
-  width: 28px;
-  height: 28px;
-  color: #8f6fb0; /* pastel purple icon color */
-  flex: 0 0 28px;
+	width: 28px;
+	height: 28px;
+	color: #8f6fb0;
+	flex: 0 0 28px;
 }
 
 .contact-label {
-  display: inline-block;
-  width: 60px;
-  color: #6b556f;
-  font-weight: 600;
-  font-size: 0.9rem;
+	display: inline-block;
+	width: 60px;
+	color: #6b556f;
+	font-weight: 600;
+	font-size: 0.9rem;
 }
 
 /* explicit link styling */
 .contact-link {
-  color: #4b2f71;
-  text-decoration: none;
-  font-size: 0.95rem;
+	color: #4b2f71;
+	text-decoration: none;
+	font-size: 0.95rem;
 }
 
 .contact-link:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Info column */
 .footer-info {
-  min-width: 200px;
+	min-width: 200px;
 }
 
 .footer-info h5 {
-  margin: 0 0 8px;
-  color: #6b4f8a;
-  font-size: 1rem;
+	margin: 0 0 8px;
+	color: #6b4f8a;
+	font-size: 1rem;
 }
 
 .footer-info .small {
-  margin: 6px 0;
-  color: #6b556f;
-  font-size: 0.9rem;
+	margin: 6px 0;
+	color: #6b556f;
+	font-size: 0.9rem;
 }
 
 /* bottom row */
 .footer-bottom {
-  max-width: 1100px;
-  margin: 12px auto 0;
-  text-align: center;
-  color: #6b556f;
-  font-size: 0.85rem;
-  padding-top: 12px;
-  border-top: 1px dashed rgba(166,138,195,0.08);
+	max-width: 1100px;
+	margin: 12px auto 0;
+	text-align: center;
+	color: #6b556f;
+	font-size: 0.85rem;
+	padding-top: 12px;
+	border-top: 1px dashed rgba(166, 138, 195, 0.08);
 }
 
 /* Responsive */
 @media (max-width: 780px) {
-  .footer-inner {
-    gap: 18px;
-    padding: 0 8px;
-  }
+	.footer-inner {
+		gap: 18px;
+		padding: 0 8px;
+	}
 
-  .footer-brand, .footer-contact, .footer-info {
-    min-width: 100%;
-  }
+	.footer-brand,
+	.footer-contact,
+	.footer-info {
+		min-width: 100%;
+	}
 
-  .contact-item {
-    gap: 8px;
-  }
+	.contact-item {
+		gap: 8px;
+	}
 
-  .contact-label {
-    width: 80px;
-  }
+	.contact-label {
+		width: 80px;
+	}
 }
