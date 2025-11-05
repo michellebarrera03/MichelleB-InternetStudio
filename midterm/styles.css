@@ -7,66 +7,51 @@ body {
 	color: #555;
 }
 
-/* --- Navigation Bar --- */
-nav {
-  background-color: #ffe6f2; /* light pink */
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: center; /* centers main content */
-  align-items: center;
-  position: relative; /* allows absolute positioning for buttons */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Centered navigation links */
+/* --- Navigation --- */
+nav {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
+    position: relative; /* so buttons can sit on the right */
+}
+
+/* Centered nav links */
 .nav-links {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #7b6d8d;
-  font-weight: 600;
-  transition: all 0.3s ease;
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff9ecb;
-  background-color: #ffe6fa;
-  border-radius: 8px;
-  padding: 6px 10px;
+    color: #ff8ac0; /* pastel pink hover */
+    background-color: #ffe6f2;
+    border-radius: 8px;
+    padding: 4px 10px;
 }
 
-/* --- Right Side Buttons --- */
+/* --- Right-side buttons --- */
 .nav-buttons {
-  position: absolute;
-  right: 2rem; /* pushes buttons to far right */
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.nav-btn {
-  background-color: #ffd6e8;
-  color: #6b4c7b;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
-}
-
-.nav-btn:hover {
-  background-color: #eac4f9; /* lavender hover */
-  color: #4b2e63;
-  transform: scale(1.05);
-}
-
+    position:
 
 
 /* Hero Section */
