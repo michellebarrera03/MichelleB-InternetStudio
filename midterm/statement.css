@@ -6,18 +6,19 @@
 }
 
 /* --- Navigation Bar --- */
+
 /* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
-  padding: 1rem 2rem;             /* extra horizontal padding */
+  padding: 1rem 0;
   border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
-  position: relative;             /* for right-side buttons */
+  position: relative;                 /* for right-side buttons */
 }
 
-/* --- Left-to-right nav links --- */
+/* --- Centered nav links --- */
 nav ul {
   display: flex;
-  justify-content: flex-start;    /* keep links aligned left */
+  justify-content: center;   /* keep links centered */
   align-items: center;
   list-style: none;
   gap: 2rem;
@@ -28,15 +29,15 @@ nav ul {
 nav ul li a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #444;             /* dark gray text */
+  color: #444;               /* dark gray text */
   font-weight: 500;
   padding: 6px 12px;
-  border-radius: 8px;      /* rounded hover background */
+  border-radius: 8px;        /* rounded background on hover */
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffffff;           /* white text on hover */
+  color: #ffffff;            /* white text on hover */
   background-color: #80ed99; /* mint green highlight */
   transform: scale(1.05);
 }
@@ -72,14 +73,14 @@ nav ul li a:hover {
 /* --- Mobile adjustments --- */
 @media (max-width: 600px) {
   nav ul {
-    justify-content: flex-start;   /* keep left-to-right on mobile too */
-    flex-wrap: wrap;               /* allow wrap if screen is very narrow */
+    justify-content: center;   /* still keep links centered on mobile */
+    flex-wrap: wrap;           /* wrap if very narrow screen */
   }
 
   .nav-buttons {
-    position: static;              /* drop below nav links */
-    transform: none;               
-    justify-content: flex-start;   /* align left with links */
+    position: static;          /* drop buttons below nav links */
+    transform: none;
+    justify-content: center;   /* center horizontally below links */
     margin-top: 10px;
     width: 100%;
   }
@@ -89,6 +90,7 @@ nav ul li a:hover {
     padding: 7px 14px;
   }
 }
+
 
 /* --- Body --- */
 body {
