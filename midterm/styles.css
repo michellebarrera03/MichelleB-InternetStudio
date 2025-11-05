@@ -47,6 +47,7 @@ nav {
 /* --- Right-side buttons --- */
 .nav-buttons {
 
+	position: static;
 	right: 2rem;
 	top: 50%;
 	transform: translateY(-50%);
