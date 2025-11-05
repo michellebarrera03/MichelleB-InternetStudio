@@ -10,6 +10,7 @@ nav {
   background-color: #ffffff;
   padding: 1rem 0;
   border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
+  position: relative;
 }
 
 nav ul {
