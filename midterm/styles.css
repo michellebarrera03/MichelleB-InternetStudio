@@ -49,13 +49,12 @@ nav {
 }
 
 /* --- Right-side buttons --- */
-nav-buttons {
-	position: absolute;
-	right: 2rem;
-	top: 50%;
-	transform: translateY(-50%);
+.nav-buttons {
 	display: flex;
 	gap: 1rem;
+	margin-left: auto;
+	align-items: center;
+	white-space: nowrap; /* keeps them in one line */
 }
 
 .nav-btn {
