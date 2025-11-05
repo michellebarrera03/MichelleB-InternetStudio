@@ -28,13 +28,15 @@ nav a:hover {
     color: #74c0fc; /* bright pastel blue on hover */
     transform: scale(1.05);
 }
+/* --- Tabs (Home, Things to Do, etc.) --- */
 nav ul li a {
     font-family: 'Fredoka', sans-serif;
     text-decoration: none;
     color: #555;
-    font-weight: 600; /* slightly bolder */
-    font-size: 1.1rem; /* bigger text */
-    padding: 0.8rem 0.6rem; /* centers vertically */
+    font-weight: 600;        /* slightly bolder */
+    font-size: 1.3rem;       /* bigger text */
+    padding: 1rem 0.8rem;    /* more vertical spacing */
+    display: inline-block;   /* ensures padding affects layout */
     transition: all 0.3s ease;
 }
 * {
