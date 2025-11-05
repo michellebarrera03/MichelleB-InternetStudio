@@ -43,14 +43,33 @@ nav a:hover {
   gap: 1rem;
 }
 
-/* --- Mobile Fix for Right-Side Buttons --- */
+/* --- Buttons style --- */
+.nav-btn {
+  font-family: "Fredoka", sans-serif;
+  background-color: #fbe2f6;
+  color: #6b4c7b;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.nav-btn:hover {
+  background-color: #e8c7fa;
+  color: #4b2e63;
+  transform: scale(1.05);
+}
+
+/* --- Mobile-only fix: iPhone / small screens --- */
 @media (max-width: 600px) {
   .nav-buttons {
-    position: static;       /* removes absolute positioning */
-    display: flex;          /* keep them in a row (or change to column if you want stacked) */
-    justify-content: center; /* centers buttons horizontally */
-    margin-top: 10px;        /* some space below nav links */
-    transform: none;        /* removes translate */
+    position: static;        /* remove absolute positioning */
+    transform: none;         /* remove vertical translate */
+    justify-content: center; /* center horizontally */
+    margin-top: 10px;        /* spacing below nav links */
+    width: 100%;             /* ensure full-width container */
   }
 
   .nav-btn {
