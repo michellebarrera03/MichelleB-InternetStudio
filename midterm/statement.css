@@ -9,15 +9,15 @@
 /* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
-  padding: 1rem 0;
+  padding: 1rem 2rem;             /* extra horizontal padding */
   border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
-  position: relative;                 /* for right-side buttons */
+  position: relative;             /* for right-side buttons */
 }
 
-/* --- Centered nav links --- */
+/* --- Left-to-right nav links --- */
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;    /* keep links aligned left */
   align-items: center;
   list-style: none;
   gap: 2rem;
@@ -30,14 +30,14 @@ nav ul li a {
   text-decoration: none;
   color: #444;             /* dark gray text */
   font-weight: 500;
-  padding: 6px 12px;       /* space for hover highlight */
+  padding: 6px 12px;
   border-radius: 8px;      /* rounded hover background */
   transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
   color: #ffffff;           /* white text on hover */
-  background-color: #80ed99; /* pastel mint hover */
+  background-color: #80ed99; /* mint green highlight */
   transform: scale(1.05);
 }
 
@@ -69,15 +69,19 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* --- Mobile-only adjustments --- */
+/* --- Mobile adjustments --- */
 @media (max-width: 600px) {
-  /* Right-side buttons drop below links and center */
+  nav ul {
+    justify-content: flex-start;   /* keep left-to-right on mobile too */
+    flex-wrap: wrap;               /* allow wrap if screen is very narrow */
+  }
+
   .nav-buttons {
-    position: static;        /* remove absolute positioning */
-    transform: none;         /* remove vertical translate */
-    justify-content: center; /* center horizontally */
-    margin-top: 10px;        /* spacing below nav links */
-    width: 100%;             /* full-width container */
+    position: static;              /* drop below nav links */
+    transform: none;               
+    justify-content: flex-start;   /* align left with links */
+    margin-top: 10px;
+    width: 100%;
   }
 
   .nav-btn {
