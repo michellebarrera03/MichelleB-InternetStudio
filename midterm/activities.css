@@ -3,7 +3,7 @@
 nav {
   background-color: #ffffff;             /* white background */
   padding: 1rem 0;
-  border-bottom: 3px dashed #b9fbc0;    /* pastel mint green border */
+  border-bottom: 3px dashed #f3c1e5;    /* pastel pink-purple border */
   position: relative;                    /* for right-side buttons */
 }
 
@@ -21,7 +21,7 @@ nav ul {
 nav ul li a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #2aa876;                        /* mint green links */
+  color: #6b4c7b;                        /* pastel purple text */
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 6px 12px;
@@ -29,8 +29,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #14532d;                        /* darker mint on hover */
-  background-color: #e6fff5;             /* soft mint hover background */
+  color: #4b2e63;                        /* darker purple on hover */
+  background-color: #ffe6f2;             /* soft pastel pink hover */
   transform: scale(1.05);
 }
 
@@ -46,8 +46,8 @@ nav ul li a:hover {
 
 .nav-btn {
   font-family: "Fredoka", sans-serif;
-  background-color: #b9fbc0;             /* mint green button */
-  color: #14532d;                         /* dark green text */
+  background-color: #fbe2f6;             /* pastel pink button */
+  color: #6b4c7b;                         /* purple text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -57,8 +57,8 @@ nav ul li a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;             /* lighter mint hover */
-  color: #0f2a18;                         /* darker text on hover */
+  background-color: #e8c7fa;             /* pastel lavender hover */
+  color: #4b2e63;                         /* darker purple text */
   transform: scale(1.05);
 }
 
@@ -77,7 +77,6 @@ nav ul li a:hover {
     padding: 7px 14px;
   }
 }
-
 
 /* --- Body Container --- */
 body {
