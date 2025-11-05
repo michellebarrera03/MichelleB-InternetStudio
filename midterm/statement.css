@@ -35,50 +35,29 @@ nav a:hover {
 }
 /* --- Right-side buttons --- */
 .nav-buttons {
-	position: absolute;
-	right: 2rem;         /* keep it on the right */
-	top: 50%;            /* vertically center */
-	transform: translateY(-50%);
-	display: flex;
-	gap: 1rem;           /* space between buttons */
-	align-items: center; /* vertical alignment */
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
 }
 
-/* Buttons styling */
-.nav-btn {
-	font-family: "Fredoka", sans-serif;
-	background-color: #b9fbc0; /* pastel mint green */
-	color: #333;
-	text-decoration: none;
-	font-weight: 600;
-	border-radius: 25px;
-	padding: 8px 18px;
-	transition: all 0.3s ease;
-	font-size: 1.05rem;
-	white-space: nowrap; /* prevents text wrap */
-}
+/* --- Mobile Fix for Right-Side Buttons --- */
+@media (max-width: 600px) {
+  .nav-buttons {
+    position: static;       /* removes absolute positioning */
+    display: flex;          /* keep them in a row (or change to column if you want stacked) */
+    justify-content: center; /* centers buttons horizontally */
+    margin-top: 10px;        /* some space below nav links */
+    transform: none;        /* removes translate */
+  }
 
-.nav-btn:hover {
-	background-color: #80ed99; /* mint hover */
-	color: #fff;
-	transform: scale(1.05);
+  .nav-btn {
+    font-size: 1rem;
+    padding: 7px 14px;
+  }
 }
-
-/* --- Mobile Fix for Buttons --- */
-@media (max-width: 780px) {
-	.nav-buttons {
-		position: absolute; /* stay on the right */
-		right: 1rem;        /* smaller margin */
-		top: 50%;
-		transform: translateY(-50%);
-		gap: 0.6rem;
-	}
-	.nav-btn {
-		padding: 6px 12px;
-		font-size: 0.95rem;
-	}
-}
-
 /* --- Body --- */
 body {
   font-family: 'Fredoka', sans-serif;
