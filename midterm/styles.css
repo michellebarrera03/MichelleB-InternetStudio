@@ -50,10 +50,12 @@ nav {
 
 /* --- Right-side buttons --- */
 .nav-buttons {
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
 	display: flex;
 	gap: 1rem;
-	margin-left: auto; /* moves buttons to the right */
-	flex-wrap: wrap;   /* prevents overlap when zooming out */
 }
 
 .nav-btn {
