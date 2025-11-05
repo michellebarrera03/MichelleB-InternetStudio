@@ -9,10 +9,10 @@ body {
 
 /* --- Navigation --- */
 nav {
-  background-color: #ffffff;
-  padding: 0.7rem 0; /* smaller top and bottom padding */
-  border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
-  font-size: 0.95rem; /* slightly smaller text */
+	background-color: #fff;
+	padding: 1rem 0;
+	border-bottom: 3px dashed #f3c1e5; /* light pastel pink-purple border */
+	position: relative; /* allows right-side buttons to sit inside */
 }
 
 /* Centered nav links */
