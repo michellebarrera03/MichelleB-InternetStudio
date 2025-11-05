@@ -7,6 +7,52 @@
 
 /* --- Navigation Bar --- */
 
+
+/* --- Navigation Bar --- */
+nav {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
+  position: relative;
+}
+
+/* --- Nav Links --- */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  padding: 4px 8px;       /* space for highlight */
+  border-radius: 8px;     /* round the hover background */
+  transition: all 0.3s ease;
+}
+
+/* --- Nav Link Hover Highlight --- */
+nav ul li a:hover {
+  color: #ffffff;          /* white text on hover */
+  background-color: #80ed99; /* pastel pink highlight */
+  transform: scale(1.05);
+}
+
+/* --- Right-side buttons --- */
+.nav-buttons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+/* --- Right-side Buttons Style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
   background-color: #b9fbc0;  /* mint green button */
@@ -40,7 +86,6 @@
     padding: 7px 14px;
   }
 }
-
 
 
 /* --- Body --- */
