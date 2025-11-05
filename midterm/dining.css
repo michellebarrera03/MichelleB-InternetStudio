@@ -343,11 +343,11 @@ nav ul li a:hover {
 }
 
 .nav-buttons .nav-btn:hover {
-    background-color: #74c0fc;
+    background-color: #74c0fc; /* brighter pastel blue on hover */
     transform: scale(1.05);
 }
 
-/* --- Center these buttons on mobile only --- */
+/* --- Center the new buttons on mobile only --- */
 @media (max-width: 600px) {
     .nav-buttons {
         justify-content: center;
@@ -355,3 +355,4 @@ nav ul li a:hover {
         width: 100%;
     }
 }
+
