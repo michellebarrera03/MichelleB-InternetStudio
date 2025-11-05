@@ -11,32 +11,33 @@ nav {
   background-color: #ffffff;
   padding: 1rem 0;
   border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
-  position: relative;
+  position: relative;                 /* for right-side buttons */
 }
 
-/* --- Nav Links --- */
+/* --- Centered nav links --- */
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #444;
+  color: #444;             /* dark gray text */
   font-weight: 500;
-  padding: 4px 8px;       /* space for highlight */
-  border-radius: 8px;     /* round the hover background */
+  padding: 6px 12px;       /* space for hover highlight */
+  border-radius: 8px;      /* rounded hover background */
   transition: all 0.3s ease;
 }
 
-/* --- Nav Link Hover Highlight --- */
 nav ul li a:hover {
-  color: #ffffff;          /* white text on hover */
-  background-color: #80ed99; /* pastel pink highlight */
+  color: #ffffff;           /* white text on hover */
+  background-color: #80ed99; /* pastel mint hover */
   transform: scale(1.05);
 }
 
@@ -50,7 +51,6 @@ nav ul li a:hover {
   gap: 1rem;
 }
 
-/* --- Right-side Buttons Style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
   background-color: #b9fbc0;  /* mint green button */
@@ -69,14 +69,15 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* --- Mobile-only fix: iPhone / small screens --- */
+/* --- Mobile-only adjustments --- */
 @media (max-width: 600px) {
+  /* Right-side buttons drop below links and center */
   .nav-buttons {
     position: static;        /* remove absolute positioning */
     transform: none;         /* remove vertical translate */
     justify-content: center; /* center horizontally */
     margin-top: 10px;        /* spacing below nav links */
-    width: 100%;             /* ensure full-width container */
+    width: 100%;             /* full-width container */
   }
 
   .nav-btn {
