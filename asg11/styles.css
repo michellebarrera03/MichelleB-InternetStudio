@@ -20,6 +20,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
+  gap: 20px;
 
 }
 /* --- Container paragraphs,headline,and image --- */
