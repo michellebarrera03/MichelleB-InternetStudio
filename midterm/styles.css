@@ -50,13 +50,12 @@ nav {
 
 /* --- Right-side buttons --- */
 .nav-buttons {
+	position: absolute;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
 	display: flex;
 	gap: 1rem;
-	margin-left: auto;
-	align-items: center;
-	margin-left: auto; /* keeps them on the right */
-  position: relative; /* no absolute positioning */
-  white-space: nowrap;
 }
 
 .nav-btn {
