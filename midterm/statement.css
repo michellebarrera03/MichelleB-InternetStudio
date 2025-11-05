@@ -7,66 +7,86 @@
 }
 
 
-/* --- Navigation Bar --- */
+/* --- Navigation --- */
 nav {
   background-color: #fff;
-  padding: 2rem 0; /* increased height of navbar */
-  border-bottom: 3px dashed #f3c1e5; /* keep your pastel pink-purple border */
-  position: relative; /* allows right-side buttons inside */
+  padding: 1.8rem 0; /* taller navbar */
+  border-bottom: 3px dashed #b9fbc0; /* pastel mint-green border */
+  position: relative; /* right-side buttons sit inside */
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-nav ul {
+/* Centered nav links */
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 3rem; /* more spacing between tabs */
+  gap: 2.4rem;
   margin: 0;
   padding: 0;
 }
 
-nav a {
+.nav-links a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
-  color: #555;
-  font-weight: 600; /* slightly bolder */
-  font-size: 1.5rem; /* bigger text size */
+  color: #444;
+  font-weight: 500;
+  font-size: 1.15rem;
   transition: all 0.3s ease;
 }
 
-nav a:hover {
-  color: #ff8ac0; /* match theme highlight color */
-  transform: scale(1.05);
+.nav-links a:hover {
+  color: #80ed99; /* pastel mint hover */
+  background-color: #e6fff5;
+  border-radius: 8px;
+  padding: 6px 12px;
 }
 
-/* Right-side buttons container */
+/* --- Right-side buttons --- */
 .nav-buttons {
   position: absolute;
-  right: 2rem; /* space from right edge */
+  right: 2rem;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   gap: 1rem;
 }
 
-/* Buttons themselves */
-.nav-buttons button {
-  background-color: #ff8ac0;
-  color: #fff;
+.nav-btn {
   font-family: 'Fredoka', sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 1.5rem;
-  cursor: pointer;
+  background-color: #b9fbc0; /* mint green button */
+  color: #1e6b4b;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
   transition: all 0.3s ease;
+  font-size: 1.05rem;
 }
 
-.nav-buttons button:hover {
-  background-color: #f3c1e5;
+.nav-btn:hover {
+  background-color: #80ed99; /* lighter mint hover */
+  color: #14432b;
   transform: scale(1.05);
 }
+
+/* --- Mobile Fix for Right-Side Buttons --- */
+@media (max-width: 600px) {
+  .nav-buttons {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+    transform: none;
+  }
+
+  .nav-btn {
+    font-size: 1rem;
+    padding: 7px 14px;
+  }
+}
+
 
 .bulb img {
   width: 100%;
