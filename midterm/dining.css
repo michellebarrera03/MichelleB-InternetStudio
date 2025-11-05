@@ -5,7 +5,8 @@
 nav {
     background-color: #ffffff;
     padding: 1rem;
-    border-bottom: 3px dashed #bde0fe; /* pastel blue accent */
+    border-bottom: 3px dashed #bde0fe;
+    position: relative;/* pastel blue accent */
 }
 
 nav ul {
@@ -338,8 +339,7 @@ nav ul {
     list-style: none;
     gap: 2rem;
     margin: 0;
-    padding: 0;
-    position: relative; /* so buttons align relative to nav */
+    padding: 0; /* so buttons align relative to nav */
 }
 
 /* --- Mobile layout: Center only the three buttons --- */
