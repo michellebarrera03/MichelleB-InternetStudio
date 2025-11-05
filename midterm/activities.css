@@ -1,37 +1,83 @@
 /* --- Reset --- */
+/* --- Navigation Bar --- */
 nav {
-    background-color: #fff;
-    padding: 1rem 0;
-    border-bottom: 3px dashed #f3c1e5; /* you can change this color per theme (mint, blue, etc.) */
+  background-color: #ffffff;             /* white background */
+  padding: 1rem 0;
+  border-bottom: 3px dashed #b9fbc0;    /* pastel mint green border */
+  position: relative;                    /* for right-side buttons */
 }
 
+/* --- Centered nav links --- */
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-    font-family: 'Fredoka', sans-serif;
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-    transition: all 0.3s ease;
+nav ul li a {
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: none;
+  color: #2aa876;                        /* mint green links */
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
 }
 
-nav a:hover {
-    color: #ff8ac0; /* match your theme highlight color */
-    transform: scale(1.05);
+nav ul li a:hover {
+  color: #14532d;                        /* darker mint on hover */
+  background-color: #e6fff5;             /* soft mint hover background */
+  transform: scale(1.05);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* --- Right-side buttons --- */
+.nav-buttons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
 }
+
+.nav-btn {
+  font-family: "Fredoka", sans-serif;
+  background-color: #b9fbc0;             /* mint green button */
+  color: #14532d;                         /* dark green text */
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.nav-btn:hover {
+  background-color: #80ed99;             /* lighter mint hover */
+  color: #0f2a18;                         /* darker text on hover */
+  transform: scale(1.05);
+}
+
+/* --- Mobile-only fix: center buttons on iPhone / small screens --- */
+@media (max-width: 600px) {
+  .nav-buttons {
+    position: static;        /* remove absolute positioning */
+    transform: none;         /* remove vertical translate */
+    justify-content: center; /* center horizontally */
+    margin-top: 10px;        /* spacing below nav links */
+    width: 100%;             /* ensure full-width container */
+  }
+
+  .nav-btn {
+    font-size: 1rem;
+    padding: 7px 14px;
+  }
+}
+
 
 /* --- Body Container --- */
 body {
