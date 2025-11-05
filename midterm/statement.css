@@ -6,6 +6,7 @@
 }
 
 /* --- Navigation Bar --- */
+/* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
   padding: 1rem 0;
@@ -13,6 +14,7 @@ nav {
   position: relative;
 }
 
+/* --- Nav Links --- */
 nav ul {
   display: flex;
   justify-content: center;
@@ -21,35 +23,23 @@ nav ul {
   gap: 2rem;
 }
 
-nav a {
+nav ul li a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
   color: #444;
   font-weight: 500;
-  position: relative;       /* needed for highlight effect */
+  padding: 4px 8px;       /* space for highlight */
+  border-radius: 8px;     /* round the hover background */
   transition: all 0.3s ease;
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(185, 251, 192, 0.3); /* mint green highlight */
-  z-index: -1;
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-nav a:hover {
-  color: #80ed99;  /* text color change on hover */
+/* --- Nav Link Hover Highlight --- */
+nav ul li a:hover {
+  color: #ffffff;          /* white text on hover */
+  background-color: #ff8ac0; /* pastel pink highlight */
   transform: scale(1.05);
 }
+
 /* --- Right-side buttons --- */
 .nav-buttons {
   position: absolute;
@@ -60,11 +50,11 @@ nav a:hover {
   gap: 1rem;
 }
 
-/* --- Buttons style --- */
+/* --- Right-side Buttons Style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
-  background-color: #b9fbc0;         /* mint green button */
-  color: #14532d;                     /* dark green text */
+  background-color: #b9fbc0;  /* mint green button */
+  color: #14532d;              /* dark green text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -74,8 +64,8 @@ nav a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #80ed99;         /* lighter mint hover */
-  color: #0f2a18;                     /* darker text on hover */
+  background-color: #80ed99;  /* lighter mint hover */
+  color: #0f2a18;             /* darker text on hover */
   transform: scale(1.05);
 }
 
@@ -94,6 +84,7 @@ nav a:hover {
     padding: 7px 14px;
   }
 }
+
 /* --- Body --- */
 body {
   font-family: 'Fredoka', sans-serif;
