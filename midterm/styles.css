@@ -10,38 +10,39 @@ body {
 /* --- Navigation Bar --- */
 nav {
   display: flex;
-  justify-content: space-between; /* keeps center links centered, right buttons to the right */
+  justify-content: space-between; /* left/center/right separation */
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ffffff; /* pastel white for nav background */
   padding: 1rem 2rem;
   border-bottom: 3px dashed #b9fbc0; /* mint accent */
   flex-wrap: wrap;
   position: relative;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: "Fredoka", sans-serif;
 }
 
 /* --- Center Links --- */
 .nav-center {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  flex: 1;
+  flex: 1; /* takes up available space to center properly */
+  gap: 1.8rem;
 }
 
 .nav-center a {
   text-decoration: none;
-  color: #333;
+  color: #333; /* dark gray text */
   font-weight: 600;
-  font-size: 1.15rem;
+  font-size: 1.2rem; /* slightly bigger */
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .nav-center a:hover {
-  background-color: #d6f5e4; /* soft mint hover */
+  background-color: #d6f5e4; /* soft mint hover background */
   color: #0b8a6e; /* darker green for contrast */
 }
 
@@ -54,7 +55,7 @@ nav {
 
 .nav-right a {
   text-decoration: none;
-  background-color: #b9fbc0;
+  background-color: #b9fbc0; /* mint theme button */
   color: #333;
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -68,12 +69,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* --- Logo (if you ever add one) --- */
-.nav-left img {
-  height: 50px;
-  width: auto;
-}
-
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
   nav {
@@ -85,7 +80,7 @@ nav {
   .nav-center {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .nav-right {
@@ -95,13 +90,14 @@ nav {
   }
 
   .nav-center a {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
 
   .nav-right a {
     font-size: 0.95rem;
   }
 }
+
 
 
 
