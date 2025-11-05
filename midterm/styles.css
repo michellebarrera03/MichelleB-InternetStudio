@@ -8,98 +8,31 @@ body {
 }
 
 /* --- Navigation Bar --- */
+/* Navigation */
 nav {
-  display: flex;
-  justify-content: space-between; /* left (logo), center links, right buttons */
-  align-items: center;
-  width: 100%; /* full width */
-  background-color: #ffffff; /* pastel white background */
-  padding: 1rem 2rem;
-  border-bottom: 3px dashed #a68ac3; /* pastel purple accent */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  font-family: "Fredoka", sans-serif;
-  position: sticky; /* stays visible when scrolling */
-  top: 0;
-  z-index: 100;
+	background-color: #ffe6f2;
+	padding: 15px 0;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* --- Center Links --- */
-.nav-center {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-grow: 1; /* takes remaining space between left & right */
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
 }
 
-.nav-center a {
-  text-decoration: none;
-  color: #7b6d8d; /* pastel purple text */
-  font-weight: 600;
-  font-size: 1.25rem; /* slightly bigger */
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  text-align: center;
+nav a {
+	text-decoration: none;
+	color: #7b6d8d;
+	font-weight: 600;
+	transition: color 0.3s ease;
 }
 
-.nav-center a:hover {
-  background-color: #d6c1e8; /* soft pastel purple */
-  color: #5a3f75; /* darker purple text */
-}
-
-/* --- Right Side Buttons --- */
-.nav-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.nav-right a {
-  text-decoration: none;
-  background-color: #ffd6e0; /* pastel pink button */
-  color: #7b6d8d; /* pastel purple text */
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1rem;
-  white-space: nowrap; /* prevents text from wrapping */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-right a:hover {
-  background-color: #ffb6c1; /* darker pastel pink on hover */
-  transform: scale(1.05);
-}
-
-/* --- Responsive Adjustments --- */
-@media (max-width: 900px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.8rem 1rem;
-  }
-
-  .nav-center {
-    order: 2; /* center links below logo if any */
-    width: 100%;
-    justify-content: center;
-    margin: 0.5rem 0;
-    gap: 1rem;
-  }
-
-  .nav-right {
-    order: 1; /* right buttons on top for mobile */
-    margin-bottom: 0.5rem;
-  }
-
-  .nav-center a {
-    font-size: 1.15rem;
-  }
-
-  .nav-right a {
-    font-size: 0.95rem;
-    padding: 0.4rem 0.9rem;
-  }
+nav a:hover {
+	color: #ff9ecb;
 }
 
 
