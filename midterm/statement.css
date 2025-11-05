@@ -6,14 +6,34 @@
   box-sizing: border-box;
 }
 
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Body --- */
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #f6fff9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
 /* --- Navigation Bar --- */
 nav {
   background-color: #ffffff;
   padding: 1rem 0;
   border-bottom: 3px dashed #b9fbc0; /* pastel mint green accent */
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-nav ul {
+/* Nav Links (center) */
+.nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,18 +41,44 @@ nav ul {
   gap: 2rem;
 }
 
-nav a {
+.nav-links a {
   font-family: 'Fredoka', sans-serif;
   text-decoration: none;
   color: #444;
   font-weight: 500;
+  font-size: 1.15rem;
   transition: all 0.3s ease;
+  padding: 6px 12px; /* same as hover to prevent jump */
+  border-radius: 8px; /* to match hover style */
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #80ed99;
+  background-color: #e6fff5;
   transform: scale(1.05);
 }
+
+/* Right-side buttons */
+.nav-buttons {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #b9fbc0; /* mint green */
+  color: #1e6b4b;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+  font-size: 1.
+
 
 /* --- Body --- */
 body {
