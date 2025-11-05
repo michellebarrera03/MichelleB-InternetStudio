@@ -19,3 +19,8 @@ body {
   position: relative;
   overflow: hidden;
 }
+/* --- Container paragraphs,headline,and image --- */
+.container div {
+    display: flex;
+    flex-flow: column;
+}
