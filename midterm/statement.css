@@ -46,8 +46,8 @@ nav a:hover {
 /* --- Buttons style --- */
 .nav-btn {
   font-family: "Fredoka", sans-serif;
-  background-color: #fbe2f6;
-  color: #6b4c7b;
+  background-color: #b9fbc0;         /* mint green button */
+  color: #14532d;                     /* dark green text */
   text-decoration: none;
   font-weight: 600;
   border-radius: 25px;
@@ -57,8 +57,8 @@ nav a:hover {
 }
 
 .nav-btn:hover {
-  background-color: #e8c7fa;
-  color: #4b2e63;
+  background-color: #80ed99;         /* lighter mint hover */
+  color: #0f2a18;                     /* darker text on hover */
   transform: scale(1.05);
 }
 
