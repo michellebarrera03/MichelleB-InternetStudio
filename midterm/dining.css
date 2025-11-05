@@ -16,7 +16,7 @@ nav ul {
     gap: 2rem;
 }
 
-nav a {
+ a {
     font-family: 'Fredoka', sans-serif;
     text-decoration: none;
     color: #555;
@@ -285,7 +285,16 @@ section h2 {
   background-color: #5eb8ff; /* pressed state */
   transform: scale(0.98);
 }
-/* --- New Nav Buttons --- */
+
+/* --- Highlight background for original nav links on hover --- */
+nav ul li a:hover {
+    background-color: #bde0fe; /* soft pastel blue highlight */
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* --- Nav Buttons --- */
 .nav-buttons {
     display: flex;
     gap: 1rem;
@@ -293,7 +302,7 @@ section h2 {
 }
 
 .nav-buttons .nav-btn {
-    background-color: #a3d8f4; /* match restaurant button theme */
+    background-color: #a3d8f4;
     color: #ffffff;
     font-family: 'Fredoka', sans-serif;
     font-weight: 500;
@@ -309,51 +318,11 @@ section h2 {
     transform: scale(1.05);
 }
 
-/* --- Center these buttons on mobile only --- */
 @media (max-width: 600px) {
     .nav-buttons {
         justify-content: center;
-        margin: 1rem 0 0 0; /* spacing from nav links */
+        margin: 1rem 0 0 0;
         width: 100%;
     }
 }
-/* --- Highlight background for original nav links on hover --- */
-nav ul li a:hover {
-    background-color: #bde0fe; /* soft pastel blue highlight */
-    padding: 0.3rem 0.6rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
 
-/* --- New Nav Buttons (Book Now, Park Map, Contact) --- */
-.nav-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-left: auto; /* push to the right on desktop */
-}
-
-.nav-buttons .nav-btn {
-    background-color: #a3d8f4; /* match restaurant button theme */
-    color: #ffffff;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    border: none;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.nav-buttons .nav-btn:hover {
-    background-color: #74c0fc; /* brighter pastel blue on hover */
-    transform: scale(1.05);
-}
-
-/* --- Center the new buttons on mobile only --- */
-@media (max-width: 600px) {
-    .nav-buttons {
-        justify-content: center;
-        margin: 1rem 0 0 0; /* spacing from nav links */
-        width: 100%;
-    }
-}
