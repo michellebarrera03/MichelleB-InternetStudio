@@ -7,121 +7,102 @@ body {
 	color: #555;
 }
 
-/* ---------------- Navigation ---------------- */
+/* --- Navigation Bar --- */
 nav {
-  background-color: #ffe6f2;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  animation: fadeInNav 1s ease-out;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* keeps center links centered, right buttons to the right */
   align-items: center;
-  padding: 15px 0 10px;
-  gap: 12px;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 3px dashed #b9fbc0; /* mint accent */
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Centered navigation links */
-.nav-links {
-  list-style: none;
+/* --- Center Links --- */
+.nav-center {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 28px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
 }
 
-.nav-links a {
+.nav-center a {
   text-decoration: none;
-  color: #7b6d8d;
+  color: #333;
   font-weight: 600;
-  font-size: 1.1rem;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 1.15rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
-/* Hover background indicator */
-.nav-links a:hover {
-  background-color: #f6d7f5; /* light pastel lavender-pink */
-  color: #5c4d73; /* slightly darker text for contrast */
-  transform: translateY(-2px);
+.nav-center a:hover {
+  background-color: #d6f5e4; /* soft mint hover */
+  color: #0b8a6e; /* darker green for contrast */
 }
 
-/* CTA Buttons */
-.cta-buttons {
+/* --- Right Side Buttons --- */
+.nav-right {
   display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 4px;
+  gap: 1rem;
+  align-items: center;
 }
 
-.cta-btn {
+.nav-right a {
   text-decoration: none;
-  font-family: "Fredoka", sans-serif;
-  font-weight: 600;
-  color: #555;
-  background-color: #ffd6e0;
-  padding: 8px 18px;
+  background-color: #b9fbc0;
+  color: #333;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+.nav-right a:hover {
+  background-color: #9fe6ac; /* darker mint hover */
+  transform: scale(1.05);
 }
 
-/* Different pastel variants */
-.cta-btn.pink {
-  background-color: #ffd6e0;
-}
-.cta-btn.mint {
-  background-color: #c8f7dc;
-}
-.cta-btn.lilac {
-  background-color: #e9d6ff;
+/* --- Logo (if you ever add one) --- */
+.nav-left img {
+  height: 50px;
+  width: auto;
 }
 
-/* Hover color shifts */
-.cta-btn.pink:hover {
-  background-color: #ffb6c1;
-}
-.cta-btn.mint:hover {
-  background-color: #b3f0ca;
-}
-.cta-btn.lilac:hover {
-  background-color: #d9bdfd;
-}
-
-/* Animation for nav */
-@keyframes fadeInNav {
-  from {
-    opacity: 0;
-    transform: translateY(-15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* --- Responsive Nav --- */
-@media (max-width: 850px) {
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
   nav {
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
-  .nav-links {
-    gap: 20px;
-  }
-
-  .cta-buttons {
+  .nav-center {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+  }
+
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .nav-center a {
+    font-size: 1.05rem;
+  }
+
+  .nav-right a {
+    font-size: 0.95rem;
   }
 }
+
 
 
 /* Hero Section */
