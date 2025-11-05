@@ -334,17 +334,11 @@ nav {
     align-items: center;
 }
 
-
-/* --- Mobile View (center only on phone) --- */
+/* --- Mobile layout: Center only the three buttons --- */
 @media (max-width: 600px) {
     .nav-buttons {
         justify-content: center;
-        margin: 0.8rem 0;       /* smaller vertical margin */
         width: 100%;
-    }
-
-    .nav-btn {
-        font-size: 0.95rem;
-        padding: 0.35rem 0.9rem; /* smaller buttons for mobile */
+        margin-top: 0.5rem; /* optional spacing below tabs */
     }
 }
