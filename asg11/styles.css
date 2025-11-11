@@ -1,15 +1,15 @@
 /* --- General Body Styling --- */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #fef6ff, #fdf0f7, #fffafc);
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffd6f6, #fff0fa, #fce4ff);
   color: #333;
   line-height: 1.6;
+  margin: 0;
   overflow-x: hidden;
   background-size: cover;
-  margin: 0;
 }
 
-/* --- Fluid Type Scale (from Fluid Type Scale Generator) --- */
+/* --- Fluid Type Scale (responsive text sizes) --- */
 html {
   font-size: clamp(16px, 1vw + 0.5rem, 20px);
 }
@@ -21,11 +21,13 @@ html {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #ffffffd6;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(255, 125, 200, 0.2);
+  backdrop-filter: blur(6px);
   position: relative;
   gap: 20px;
+  border: 2px solid #ffb7ef;
 }
 
 /* --- Gallery Layout --- */
@@ -33,46 +35,76 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* --- Individual Character Cards --- */
 .gallery div {
   flex: 1 1 calc(45% - 1rem);
-  background-color: rgba(255, 238, 251, 0.7);
-  border-radius: 12px;
-  padding: 1rem;
+  background: linear-gradient(145deg, #fff5fb, #ffe9f9);
+  border-radius: 18px;
+  padding: 1.2rem;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(255, 165, 235, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Card Hover Animation --- */
+.gallery div:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(255, 100, 200, 0.4);
 }
 
 /* --- Headings --- */
 h1 {
-  font-family: 'Chewy', cursive;
-  color: #e86ab5;
+  font-family: 'Lilita One', cursive;
+  color: #ff5cc3;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 160, 240, 0.4);
+  animation: sparkle 4s ease-in-out infinite;
 }
 
 h2 {
-  font-family: 'Chewy', cursive;
-  color: #c25ad3;
-  font-size: 1.6em;
+  font-family: 'Lilita One', cursive;
+  color: #ff7be5;
+  font-size: 1.8em;
+  margin-top: 0.5rem;
+  text-shadow: 0 0 6px rgba(255, 130, 240, 0.3);
 }
 
 /* --- Paragraphs --- */
 p {
   font-size: 1em;
   color: #555;
+  padding: 0 0.5rem;
 }
 
 /* --- Images --- */
 .photos {
   width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-  margin-top: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 300px; /* Bigger image */
+  border-radius: 20px;
+  margin-top: 0.7rem;
+  box-shadow: 0 4px 12px rgba(255, 120, 220, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* --- Image Hover Animation --- */
+.photos:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 6px 20px rgba(255, 100, 230, 0.6);
+}
+
+/* --- Sparkle Animation for Header --- */
+@keyframes sparkle {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 180, 240, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 18px rgba(255, 130, 230, 0.8);
+  }
 }
 
 /* --- Responsive --- */
@@ -80,5 +112,10 @@ p {
   .gallery div {
     flex: 1 1 100%;
   }
+  h1 {
+    font-size: 2.2em;
+  }
+  .photos {
+    max-width: 250px;
+  }
 }
-
