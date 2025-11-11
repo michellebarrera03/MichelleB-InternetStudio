@@ -35,17 +35,17 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* --- Individual Character Cards --- */
 .gallery div {
   flex: 1 1 calc(45% - 1rem);
-  background: linear-gradient(145deg, #fff5fb, #ffe9f9);
+  background: linear-gradient(145deg, #ffe3f4, #ffd1f0); /* darker pink tone */
   border-radius: 18px;
-  padding: 1.2rem;
+  padding: 0.8rem; /* smaller padding */
   text-align: center;
-  box-shadow: 0 8px 20px rgba(255, 165, 235, 0.25);
+  box-shadow: 0 8px 20px rgba(255, 145, 225, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -84,7 +84,7 @@ p {
 /* --- Images --- */
 .photos {
   width: 100%;
-  max-width: 300px; /* Bigger image */
+  max-width: 300px; /* bigger image */
   border-radius: 20px;
   margin-top: 0.7rem;
   box-shadow: 0 4px 12px rgba(255, 120, 220, 0.4);
@@ -111,10 +111,13 @@ p {
 @media (max-width: 768px) {
   .gallery div {
     flex: 1 1 100%;
+    padding: 0.6rem; /* even tighter padding on mobile */
   }
+
   h1 {
     font-size: 2.2em;
   }
+
   .photos {
     max-width: 250px;
   }
