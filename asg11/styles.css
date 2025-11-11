@@ -122,3 +122,70 @@ p {
     max-width: 250px;
   }
 }
+
+/* --- HERO SECTION --- */
+.hero {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Heading & image stay centered */
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.heading-container h1 {
+  font-family: 'Lilita One', cursive;
+  font-size: 3rem;
+  color: #ff69b4; /* Y2K hot pink */
+  text-shadow: 2px 2px 10px rgba(255, 182, 193, 0.8);
+  margin: 0;
+}
+
+/* --- SOFTBALL ANIMATION --- */
+.softball {
+  width: 90px;
+  height: 90px;
+  animation: throwBall 3s ease-in-out;
+  position: relative;
+}
+
+/* Animation: toss the ball across and back */
+@keyframes throwBall {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(400px) rotate(720deg);
+  }
+  50% {
+    transform: translateX(-300px) rotate(-720deg);
+  }
+  75% {
+    transform: translateX(100px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+/* Optional: bounce when hovered */
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.softball:hover {
+  animation: bounceIn 1s ease;
+}
