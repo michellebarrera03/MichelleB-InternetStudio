@@ -19,7 +19,7 @@ main {
   align-items: stretch;
   grid-auto-rows: 500px;
   align-content: center;
-grid-auto-flow: column;
+ grid-auto-flow: column;
 
 
 }
