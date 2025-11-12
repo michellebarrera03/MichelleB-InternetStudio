@@ -17,7 +17,7 @@ main {
   justify-items: center;
   justify-content: center;
   align-items: stretch;
-  grid-auto-rows: 500px;
+  grid-auto-rows: 450px;
   align-content: center;
  grid-auto-flow: column;
 
