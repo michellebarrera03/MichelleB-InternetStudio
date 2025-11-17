@@ -27,6 +27,10 @@ main {
   justify-self: center;
 }
 
+.box.k,
+.box.l {
+  justify-self: center;
+}
 
 h2 {
   font-family: Poppins;
@@ -43,9 +47,6 @@ img {
   width: 230px;
   height: auto;
 }
-
-
-
 
 
 .mins {
