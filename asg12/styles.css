@@ -22,15 +22,11 @@ main {
   background-color: rgba(255, 250, 160, 0.3);
   border-radius: 25px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.5);
-  width: 100%;
-  max-width: 250px;
+  width: 250px;      /* <- FIXED WIDTH */
+  max-width: 100%;
   justify-self: center;
 }
 
-.box.k,
-.box.l {
-  justify-self: center !important;
-}
 
 
 h2 {
