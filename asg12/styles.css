@@ -6,14 +6,9 @@ header, footer {
   border-radius: 25px;
   padding: 65px;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header p, footer p {
-  margin: 0; /* Remove default paragraph margins */
+  margin: 0;
+  padding: 10px 0; /* Add controlled padding if you want space */
 }
 
 main {
@@ -78,12 +73,6 @@ img {
   border-top: 1px solid #4a4a4a;
 }
 
-.logo {
-  width: 115px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 20px;
-}
 
 .container {
   min-width: 100%; /* Changed from 500px */
