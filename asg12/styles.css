@@ -12,7 +12,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4,400px);
   grid-template-rows: repeat(3, 450px);
-  gap: 20px;
+  gap: 10px;
   margin-top: 44px;
   justify-items: center;
   justify-content: center;
