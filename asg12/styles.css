@@ -29,8 +29,7 @@ main {
 
 .box k,
 .box l {
-    margin-left: auto;
-    margin-right: auto;
+  justify-self: center;
 }
 
 
