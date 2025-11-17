@@ -39,9 +39,10 @@ h2 {
 }
 
 img {
-  width: 100%; /* Changed from 230px */
-  max-width: 230px; /* Keeps max size */
-  height: auto;
+  width: 100%; 
+  max-width: 230px; 
+  height: 200px; /* Change from auto to specific height */
+  object-fit: cover; /* This keeps the image looking good */
 }
 
 .mins {
