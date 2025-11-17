@@ -27,9 +27,7 @@ main {
   justify-self: center;
 }
 
-.box .k, .box .l{
-  margin-left: 50px;
-}
+
 h2 {
   font-family: Poppins;
   font-size: 18px;
