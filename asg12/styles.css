@@ -10,12 +10,10 @@ header, footer {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5px;
   margin-top: 44px;
-  justify-content: center;
-  align-items: stretch;
-  align-content: center;
+  place-items: center;
 }
 
 .box {
