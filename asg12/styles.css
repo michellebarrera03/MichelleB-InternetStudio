@@ -41,7 +41,7 @@ h2 {
 img {
   width: 100%; 
   max-width: 230px; 
-  height: 200px; /* Change from auto to specific height */
+  height: 300px; /* Change from auto to specific height */
   object-fit: cover; /* This keeps the image looking good */
 }
 
