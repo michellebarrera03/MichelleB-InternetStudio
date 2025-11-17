@@ -7,6 +7,15 @@ header, footer {
   padding: 65px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header p, footer p {
+  margin: 0; /* Remove default paragraph margins */
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
