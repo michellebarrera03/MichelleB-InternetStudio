@@ -27,8 +27,8 @@ main {
   justify-self: center;
 }
 
-.box.k,
-.box.l {
+.box k,
+.box l {
    place-self: center;
 }
 
