@@ -27,6 +27,11 @@ main {
   justify-self: center;
 }
 
+.box.k,
+.box.l {
+  justify-self: center !important;
+}
+
 
 h2 {
   font-family: Poppins;
