@@ -42,8 +42,8 @@ h2 {
 img {
   width: 100%; 
   max-width: 230px; 
-  height: 280px; /* Change from auto to specific height */
-  object-fit: cover; /* This keeps the image looking good */
+  height: 280px; 
+  object-fit: contain; 
 }
 
 .mins {
@@ -73,8 +73,8 @@ img {
 
 
 .container {
-  min-width: 100%; /* Changed from 500px */
-  max-width: 1200px; /* Add max width for large screens */
+  min-width: 100%; 
+  max-width: 1200px; 
   margin: auto;
 }
 
