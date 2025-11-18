@@ -13,7 +13,7 @@ main {
   grid-template-rows: repeat(3, auto);    
   gap: 20px;                               
   justify-content: center;                 
-  margin-top: 50px;
+  margin-top: 44px;
   padding: 0 20px; 
 }
 /* only boxes design will chnage if i move anything wihtin here */
@@ -26,7 +26,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 h2 {
