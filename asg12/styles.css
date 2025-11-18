@@ -13,7 +13,7 @@ main {
   grid-template-rows: repeat(3, auto);    
   gap: 20px;                               
   justify-content: center;                 
-  margin-top: 44px;
+  margin-top: 50px;
   padding: 0 20px; 
 }
 /* only boxes design will chnage if i move anything wihtin here */
