@@ -1,3 +1,12 @@
+/* limelight-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Limelight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/limelight-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* header */
 header, footer {
   background-color: #ffa500;
@@ -34,7 +43,7 @@ main {
 }
 
 h2 {
-  font-family: limelight;
+  font-family: 'Limelight';
   font-size: 16px; /* Reduced from 18px */
   font-weight: 600;
   letter-spacing: 0.3px;
