@@ -10,7 +10,15 @@ header, footer {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; /* Dark grey/black cinema background */
+  background-color: #0d0d0d;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,.05) 2px,
+      rgba(0,0,0,.05) 4px
+    );
 }
 
 main {
