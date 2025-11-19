@@ -31,12 +31,16 @@ main {
 
 h2 {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 16px; /* Reduced from 18px */
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: center;
   color: #ffa500;
-  padding: 10px 0px 10px 10px;
+  padding: 10px;
+  min-height: 60px; /* All titles get same space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
