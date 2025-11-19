@@ -23,7 +23,7 @@ header, footer {
   min-width: 100%; 
   border-radius: 25px;
   font-size: 30px;
-  padding: 65px 10px; /* 65px top/bottom, 20px left/right */
+  padding: 65px 8px; /* 65px top/bottom, 20px left/right */
 }
 
 body {
