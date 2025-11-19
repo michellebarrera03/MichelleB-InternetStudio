@@ -37,10 +37,11 @@ h2 {
   text-align: center;
   color: #ffa500;
   padding: 10px;
-  min-height: 60px; /* All titles get same space */
+  min-height: 60px; 
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0; 
 }
 
 img {
@@ -59,6 +60,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.3px;
   color: #4a4a4a;
+  margin-top: -10px;
  /* removed: position: relative; */
   /* removed: bottom: 5px; */
 }
