@@ -7,6 +7,12 @@ header, footer {
   padding: 65px 10px; /* 65px top/bottom, 20px left/right */
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark grey/black cinema background */
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
