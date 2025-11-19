@@ -140,6 +140,7 @@ footer {
   margin-top: 44px;
 }
 
+
 /* Media Queries for my phone */
 @media (max-width: 1200px) {
   main {
@@ -157,4 +158,13 @@ footer {
   }
 }
 
-
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr; 
+  }
+  
+  header, footer {
+    padding: 30px 15px;
+    border-radius: 15px;
+  }
+}
