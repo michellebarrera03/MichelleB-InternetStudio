@@ -77,15 +77,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* controls the backgorund image/patern striped  */
 body {
     font-family: 'Quicksand', sans-serif;
     background: repeating-linear-gradient(
-        45deg,
+        to right,
         #ffd6e8,
-        #ffd6e8 40px,
-        #ffffff 40px,
-        #ffffff 80px
+        #ffd6e8 50px,
+        #ffffff 50px,
+        #ffffff 100px
     );
     min-height: 100vh;
     padding: 0;
