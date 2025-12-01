@@ -1,7 +1,5 @@
-
-
 /* Import Google Fonts - Cute but readable */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 * {
     margin: 0;
@@ -87,23 +85,15 @@ body > div:first-child p {
 }
 
 /* Grid Container for Job Cards */
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-/* Job Cards Grid - Applied to cards 2, 3, 4 */
-body > div:nth-child(2) {
-    grid-column: 1;
+.job-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 0 40px;
+    margin: 0 40px 60px 40px;
 }
 
 /* Individual Job Card Styling */
-body > div:nth-child(n+2) {
+.job-grid > div {
     background: linear-gradient(to bottom, #ffffff 0%, #fff5f9 100%);
     border: 3px solid #ffadd6;
     border-radius: 20px;
@@ -113,13 +103,13 @@ body > div:nth-child(n+2) {
     min-height: 450px;
 }
 
-body > div:nth-child(n+2):hover {
+.job-grid > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(255, 145, 199, 0.5);
 }
 
 /* Job Card Headings */
-body > div:nth-child(n+2) h1 {
+.job-grid > div h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
     color: #e05ba4;
@@ -143,7 +133,8 @@ body > div:nth-child(n+2) h1 {
 }
 
 /* Link styling */
-body > div a {
+body > div a,
+.job-grid a {
     display: inline-block;
     background: linear-gradient(135deg, #ff91c7 0%, #ffadd6 100%);
     color: #ffffff;
@@ -160,14 +151,15 @@ body > div a {
     font-size: 1.1em;
 }
 
-body > div a:hover {
+body > div a:hover,
+.job-grid a:hover {
     background: linear-gradient(135deg, #e05ba4 0%, #ff91c7 100%);
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(224, 91, 164, 0.5);
 }
 
 /* Paragraph styling */
-body > div:nth-child(n+2) p {
+.job-grid > div p {
     font-size: 1em;
     line-height: 1.7;
     color: #8b5a7d;
@@ -177,13 +169,13 @@ body > div:nth-child(n+2) p {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    body > div:nth-child(2) {
+    .job-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    body > div:nth-child(2) {
+    .job-grid {
         grid-template-columns: 1fr;
     }
     
@@ -202,8 +194,8 @@ body > div:nth-child(n+2) p {
         margin: 50px 20px;
     }
     
-    body > div:nth-child(2) {
-        margin: 0 20px;
+    .job-grid {
+        margin: 0 20px 50px 20px;
         gap: 20px;
     }
     
@@ -215,7 +207,8 @@ body > div:nth-child(n+2) p {
         font-size: 1.8em;
     }
     
-    body > div a {
+    body > div a,
+    .job-grid a {
         padding: 10px 20px;
         font-size: 1em;
     }
