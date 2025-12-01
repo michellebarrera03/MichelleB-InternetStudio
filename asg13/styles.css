@@ -86,7 +86,7 @@ body {
     color: #8b5a7d;
 }
 
-/* Top Scalloped Border */
+/* top coquette Border */
 body::before {
     content: '';
     position: absolute;
@@ -104,7 +104,7 @@ body::before {
     z-index: 1000;
 }
 
-/* Bottom Scalloped Border */
+/* Bottom coquette Border- REMOVED DIDNT WORK
 body::after {
     content: '';
     position: fixed;
@@ -121,6 +121,22 @@ body::after {
     background-repeat: repeat-x;
     z-index: 1000;
 }
+*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px; /* Space above footer */
+    background: 
+        radial-gradient(circle at 50% 0%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 0% 0%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 100% 0%, #ffffff 60%, transparent 60%);
+    background-size: 75px 60px;
+    background-position: 0 0, 37.5px 0, -37.5px 0;
+    background-repeat: repeat-x;
+}
+
 
 /* Main container with padding for scalloped borders */
 body > div {
