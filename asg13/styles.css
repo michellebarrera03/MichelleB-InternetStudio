@@ -208,6 +208,7 @@ body > div:first-child p {
     padding-bottom: 15px;
     width: 100%; 
     min-height: 2.5em; 
+}
 
 /* job box card H2s */
 .job-grid > div h2 {
