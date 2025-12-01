@@ -90,6 +90,7 @@ body > div:first-child p {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0 40px 60px 40px;
+    width: calc(100% - 80px); /* Matches the header box width */
 }
 
 /* Individual Job Card Styling */
