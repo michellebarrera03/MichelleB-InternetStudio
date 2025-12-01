@@ -36,12 +36,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to bottom, #ffd6e8 0%, #ffe4f0 50%, #fff0f5 100%);
     min-height: 100vh;
-    padding: 0;
+    padding: 80px 20px 80px 20px;
     color: #8b5a7d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 40px;
 }
 
 /* Top Scalloped Border */
@@ -80,17 +76,22 @@ body::after {
     z-index: 1000;
 }
 
+/* Container wrapper for all content */
+body > div {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /* Header/Intro Box - Wide rectangular box */
 body > div:first-child {
     background: linear-gradient(135deg, #ffb3d9 0%, #ffc9e3 100%);
     border: 3px solid #ff91c7;
     border-radius: 25px;
     padding: 40px 50px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     box-shadow: 0 8px 20px rgba(255, 145, 199, 0.3);
     text-align: center;
     width: 100%;
-    max-width: 1400px;
 }
 
 body > div:first-child h1 {
@@ -110,25 +111,36 @@ body > div:first-child p {
     margin: 0 auto;
 }
 
-/* Flexbox container for job cards */
-body > div:nth-child(2),
-body > div:nth-child(3),
-body > div:nth-child(4) {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    max-width: 1400px;
-    flex-wrap: wrap;
-    justify-content: center;
+/* FLEXBOX CONTAINER FOR THE 3 JOB BOXES - DESKTOP ONLY */
+@media (min-width: 769px) {
+    /* Create a flex wrapper */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Wrapper for the job cards */
+    body > div:nth-child(2) {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        width: 100%;
+        max-width: 1400px;
+        flex-wrap: nowrap;
+    }
+    
+    /* Make sure all 3 boxes stay in a row */
+    body > div:nth-child(2),
+    body > div:nth-child(3),
+    body > div:nth-child(4) {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: 420px;
+    }
 }
 
-/* If you want to use the wrapper approach instead, uncomment this:
-body {
-    display: block;
-}
-*/
-
-/* Job Card Styling */
+/* Job Card Styling - APPLIES TO ALL SCREENS */
 body > div:nth-child(2),
 body > div:nth-child(3),
 body > div:nth-child(4) {
@@ -139,9 +151,7 @@ body > div:nth-child(4) {
     box-shadow: 0 6px 15px rgba(255, 173, 214, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 450px;
-    flex: 1 1 350px;
-    max-width: 420px;
-    margin-bottom: 30px;
+    text-align: center;
 }
 
 body > div:nth-child(2):hover,
@@ -178,7 +188,9 @@ body > div:nth-child(4) h1 {
 }
 
 /* Link styling */
-body > div a {
+body > div:nth-child(2) a,
+body > div:nth-child(3) a,
+body > div:nth-child(4) a {
     display: inline-block;
     background: linear-gradient(135deg, #ff91c7 0%, #ffadd6 100%);
     color: #ffffff;
@@ -187,15 +199,14 @@ body > div a {
     border-radius: 25px;
     font-weight: 600;
     margin: 15px auto;
-    display: block;
-    text-align: center;
-    width: fit-content;
     box-shadow: 0 4px 10px rgba(255, 145, 199, 0.4);
     transition: all 0.3s ease;
     font-size: 1.1em;
 }
 
-body > div a:hover {
+body > div:nth-child(2) a:hover,
+body > div:nth-child(3) a:hover,
+body > div:nth-child(4) a:hover {
     background: linear-gradient(135deg, #e05ba4 0%, #ff91c7 100%);
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(224, 91, 164, 0.5);
@@ -212,66 +223,10 @@ body > div:nth-child(4) p {
     margin-top: 15px;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    body {
-        padding: 80px 30px;
-    }
-    
-    body > div:first-child {
-        padding: 35px 40px;
-    }
-    
-    body > div:first-child h1 {
-        font-size: 2.5em;
-    }
-    
-    body > div:nth-child(2),
-    body > div:nth-child(3),
-    body > div:nth-child(4) {
-        flex: 1 1 300px;
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 900px) {
-    body > div:nth-child(2),
-    body > div:nth-child(3),
-    body > div:nth-child(4) {
-        flex: 1 1 calc(50% - 15px);
-        max-width: 100%;
-    }
-}
-
+/* MOBILE ONLY - Stack boxes vertically */
 @media (max-width: 768px) {
     body {
-        padding: 70px 20px;
-    }
-    
-    body > div:first-child {
-        padding: 30px 25px;
-    }
-    
-    body > div:first-child h1 {
-        font-size: 2em;
-    }
-    
-    body > div:first-child p {
-        font-size: 1em;
-    }
-    
-    body > div:nth-child(2),
-    body > div:nth-child(3),
-    body > div:nth-child(4) {
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 60px 15px;
+        padding: 60px 15px 60px 15px;
     }
     
     body::before,
@@ -282,10 +237,11 @@ body > div:nth-child(4) p {
     
     body > div:first-child {
         padding: 25px 20px;
+        margin-bottom: 25px;
     }
     
     body > div:first-child h1 {
-        font-size: 1.6em;
+        font-size: 1.8em;
         letter-spacing: 1px;
     }
     
@@ -294,9 +250,13 @@ body > div:nth-child(4) p {
         line-height: 1.6;
     }
     
+    /* Stack job boxes vertically on mobile */
     body > div:nth-child(2),
     body > div:nth-child(3),
     body > div:nth-child(4) {
+        width: 100%;
+        margin: 0 auto 20px auto;
+        max-width: 500px;
         padding: 25px 20px;
         min-height: 380px;
     }
@@ -304,11 +264,18 @@ body > div:nth-child(4) p {
     body > div:nth-child(2) h1,
     body > div:nth-child(3) h1,
     body > div:nth-child(4) h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     
     .logo {
         max-width: 150px;
         height: 150px;
+    }
+    
+    body > div:nth-child(2) a,
+    body > div:nth-child(3) a,
+    body > div:nth-child(4) a {
+        font-size: 1em;
+        padding: 10px 25px;
     }
 }
