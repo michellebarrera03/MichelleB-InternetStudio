@@ -27,7 +27,7 @@ header, footer {
 }
 
 body {
-  background-image: url('moviebg.svg');
+  background-image: url('images/moviebg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
