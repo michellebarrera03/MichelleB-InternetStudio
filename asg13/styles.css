@@ -120,6 +120,15 @@ body > div:first-child p {
     padding-bottom: 15px;
 }
 
+.job-grid > div h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    color: #b567a0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
 /* Logo style */
 .logo {
     width: 100%;
