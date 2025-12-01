@@ -23,3 +23,216 @@
        
 
  Insert all your glorious CSS styles below! */
+/* Import Google Fonts - Cute but readable */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #ffd6e8 0%, #ffe4f0 50%, #fff0f5 100%);
+    min-height: 100vh;
+    padding: 0;
+    color: #8b5a7d;
+}
+
+/* Top Scalloped Border */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: 
+        radial-gradient(circle at 50% 0%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 0% 0%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 100% 0%, #ffffff 60%, transparent 60%);
+    background-size: 50px 40px;
+    background-position: 0 0, 25px 0, -25px 0;
+    background-repeat: repeat-x;
+    z-index: 1000;
+}
+
+/* Bottom Scalloped Border */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: 
+        radial-gradient(circle at 50% 100%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 0% 100%, #ffffff 60%, transparent 60%),
+        radial-gradient(circle at 100% 100%, #ffffff 60%, transparent 60%);
+    background-size: 50px 40px;
+    background-position: 0 0, 25px 0, -25px 0;
+    background-repeat: repeat-x;
+    z-index: 1000;
+}
+
+/* Main container with padding for scalloped borders */
+body > div {
+    margin: 60px 40px 60px 40px;
+}
+
+/* Header/Intro Box - Wide rectangular box */
+body > div:first-child {
+    background: linear-gradient(135deg, #ffb3d9 0%, #ffc9e3 100%);
+    border: 3px solid #ff91c7;
+    border-radius: 25px;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(255, 145, 199, 0.3);
+    text-align: center;
+}
+
+body > div:first-child h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #d65a9f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+}
+
+body > div:first-child p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #954d7a;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Container for the 3 job cards */
+body > div:nth-child(2),
+body > div:nth-child(3),
+body > div:nth-child(4) {
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+body > div:nth-child(4) {
+    margin-right: 0;
+}
+
+/* Job Card Styling */
+body > div:nth-child(2),
+body > div:nth-child(3),
+body > div:nth-child(4) {
+    background: linear-gradient(to bottom, #ffffff 0%, #fff5f9 100%);
+    border: 3px solid #ffadd6;
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 6px 15px rgba(255, 173, 214, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 450px;
+}
+
+body > div:nth-child(2):hover,
+body > div:nth-child(3):hover,
+body > div:nth-child(4):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 145, 199, 0.5);
+}
+
+/* Job Card Headings */
+body > div:nth-child(2) h1,
+body > div:nth-child(3) h1,
+body > div:nth-child(4) h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #e05ba4;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 3px solid #ffc9e3;
+    padding-bottom: 15px;
+}
+
+/* Logo styling */
+.logo {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ffc9e3;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(255, 145, 199, 0.3);
+}
+
+/* Link styling */
+body > div a {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff91c7 0%, #ffadd6 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(255, 145, 199, 0.4);
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+}
+
+body > div a:hover {
+    background: linear-gradient(135deg, #e05ba4 0%, #ff91c7 100%);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(224, 91, 164, 0.5);
+}
+
+/* Paragraph styling */
+body > div:nth-child(2) p,
+body > div:nth-child(3) p,
+body > div:nth-child(4) p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #8b5a7d;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    body > div:nth-child(2),
+    body > div:nth-child(3),
+    body > div:nth-child(4) {
+        width: calc(50% - 15px);
+    }
+    
+    body > div:nth-child(4) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body > div:nth-child(2),
+    body > div:nth-child(3),
+    body > div:nth-child(4) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    body > div:first-child h1 {
+        font-size: 2em;
+    }
+    
+    body > div:first-child p {
+        font-size: 1em;
+    }
+}
