@@ -1,5 +1,6 @@
 
 
+/* Import Google Fonts - Cute but readable */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 * {
@@ -14,10 +15,6 @@ body {
     min-height: 100vh;
     padding: 0;
     color: #8b5a7d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 40px;
 }
 
 /* Top Scalloped Border */
@@ -56,6 +53,11 @@ body::after {
     z-index: 1000;
 }
 
+/* Main container with padding for scalloped borders */
+body > div {
+    margin: 60px 40px 60px 40px;
+}
+
 /* Header/Intro Box - Wide rectangular box */
 body > div:first-child {
     background: linear-gradient(135deg, #ffb3d9 0%, #ffc9e3 100%);
@@ -65,8 +67,6 @@ body > div:first-child {
     margin-bottom: 30px;
     box-shadow: 0 8px 20px rgba(255, 145, 199, 0.3);
     text-align: center;
-    width: 100%;
-    max-width: 1400px;
 }
 
 body > div:first-child h1 {
@@ -86,23 +86,20 @@ body > div:first-child p {
     margin: 0 auto;
 }
 
-/* Flexbox container for job cards */
+/* Container for the 3 job cards */
 body > div:nth-child(2),
 body > div:nth-child(3),
 body > div:nth-child(4) {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    max-width: 1400px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
-/* If you want to use the wrapper approach instead, uncomment this:
-body {
-    display: block;
+body > div:nth-child(4) {
+    margin-right: 0;
 }
-*/
 
 /* Job Card Styling */
 body > div:nth-child(2),
@@ -115,9 +112,6 @@ body > div:nth-child(4) {
     box-shadow: 0 6px 15px rgba(255, 173, 214, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 450px;
-    flex: 1 1 350px;
-    max-width: 420px;
-    margin-bottom: 30px;
 }
 
 body > div:nth-child(2):hover,
@@ -189,43 +183,26 @@ body > div:nth-child(4) p {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    body {
-        padding: 80px 30px;
-    }
-    
-    body > div:first-child {
-        padding: 35px 40px;
-    }
-    
-    body > div:first-child h1 {
-        font-size: 2.5em;
-    }
-    
+@media (max-width: 1024px) {
     body > div:nth-child(2),
     body > div:nth-child(3),
     body > div:nth-child(4) {
-        flex: 1 1 300px;
-        max-width: 400px;
+        width: calc(50% - 15px);
     }
-}
-
-@media (max-width: 900px) {
-    body > div:nth-child(2),
-    body > div:nth-child(3),
+    
     body > div:nth-child(4) {
-        flex: 1 1 calc(50% - 15px);
-        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 70px 20px;
-    }
-    
-    body > div:first-child {
-        padding: 30px 25px;
+    body > div:nth-child(2),
+    body > div:nth-child(3),
+    body > div:nth-child(4) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     
     body > div:first-child h1 {
@@ -235,56 +212,5 @@ body > div:nth-child(4) p {
     body > div:first-child p {
         font-size: 1em;
     }
-    
-    body > div:nth-child(2),
-    body > div:nth-child(3),
-    body > div:nth-child(4) {
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 60px 15px;
-    }
-    
-    body::before,
-    body::after {
-        background-size: 40px 30px;
-        height: 30px;
-    }
-    
-    body > div:first-child {
-        padding: 25px 20px;
-    }
-    
-    body > div:first-child h1 {
-        font-size: 1.6em;
-        letter-spacing: 1px;
-    }
-    
-    body > div:first-child p {
-        font-size: 0.95em;
-        line-height: 1.6;
-    }
-    
-    body > div:nth-child(2),
-    body > div:nth-child(3),
-    body > div:nth-child(4) {
-        padding: 25px 20px;
-        min-height: 380px;
-    }
-    
-    body > div:nth-child(2) h1,
-    body > div:nth-child(3) h1,
-    body > div:nth-child(4) h1 {
-        font-size: 1.5em;
-    }
-    
-    .logo {
-        max-width: 150px;
-        height: 150px;
-    }
-}
