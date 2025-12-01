@@ -249,7 +249,7 @@ body > div a,
     box-shadow: 0 4px 10px rgba(255, 145, 199, 0.4);
     transition: all 0.3s ease;
     font-size: 1.1em;
-    flex-shrink: 0; /
+    flex-shrink: 0; 
 }
 
 body > div a:hover,
