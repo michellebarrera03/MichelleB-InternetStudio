@@ -86,7 +86,7 @@ body {
     color: #8b5a7d;
 }
 
-/* top coquette Border */
+/* top coquette border */
 body::before {
     content: '';
     position: absolute;
@@ -104,7 +104,7 @@ body::before {
     z-index: 1000;
 }
 
-/* Bottom coquette Border- REMOVED DIDNT WORK
+/* bottom coquette border- REMOVED DIDNT WORK
 body::after {
     content: '';
     position: fixed;
@@ -137,17 +137,17 @@ footer {
     background-repeat: repeat-x;
 }
 
-/* Main container with padding for scalloped borders */
+/*  padding for bordrs */
 body > div {
     margin: 80px 40px 80px 40px;
 }
 
-/* Header/Intro Box - Wide rectangular box */
+/* Intro rectangle box at the top  */
 body > div:first-child {
     background: linear-gradient(135deg, #ffb3d9 0%, #ffc9e3 100%);
     border: 3px solid #ff91c7;
     border-radius: 25px;
-    padding: 40px 50px; /* CHANGED: Added back horizontal padding for better text spacing */
+    padding: 40px 50px; 
     margin-bottom: 30px;
     box-shadow: 0 8px 20px rgba(255, 145, 199, 0.3);
     text-align: center;
@@ -170,15 +170,15 @@ body > div:first-child p {
     margin: 0 auto;
 }
 
-/* Grid Container for Job Cards */
+/* Grid Container for job box cards */
 .job-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    /* REMOVED: margin and width - inherits from body > div for proper alignment */
+    
 }
 
-/* Individual Job Card Styling */
+/* single job box card style */
 .job-grid > div {
     background: linear-gradient(to bottom, #ffffff 0%, #fff5f9 100%);
     border: 3px solid #ffadd6;
@@ -187,9 +187,9 @@ body > div:first-child p {
     box-shadow: 0 6px 15px rgba(255, 173, 214, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     min-height: 450px;
-    display: flex; /* ADDED: Flexbox to organize content vertically */
-    flex-direction: column; /* ADDED: Stack content vertically */
-    align-items: center; /* ADDED: Center all content horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 .job-grid > div:hover {
@@ -197,7 +197,7 @@ body > div:first-child p {
     box-shadow: 0 10px 25px rgba(255, 145, 199, 0.5);
 }
 
-/* Job Card Headings */
+/* job box card H1s */
 .job-grid > div h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2em;
@@ -206,11 +206,10 @@ body > div:first-child p {
     text-align: center;
     border-bottom: 3px solid #ffc9e3;
     padding-bottom: 15px;
-    width: 100%; /* ADDED: Makes border span full width */
-    min-height: 2.5em; /* ADDED: Ensures all h1s take same height even with different text lengths */
-}
+    width: 100%; 
+    min-height: 2.5em; 
 
-/* ADDED: h2 styling for job cards - centered */
+/* job box card H2s */
 .job-grid > div h2 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
@@ -220,7 +219,7 @@ body > div:first-child p {
     font-weight: 600;
 }
 
-/* Logo styling */
+/* logo img style */
 .logo {
     width: 100%;
     max-width: 200px;
@@ -231,10 +230,10 @@ body > div:first-child p {
     margin: 20px auto;
     display: block;
     box-shadow: 0 4px 10px rgba(255, 145, 199, 0.3);
-    flex-shrink: 0; /* ADDED: Prevents image from shrinking in flexbox */
+    flex-shrink: 0; 
 }
 
-/* Link styling */
+/* link button style */
 body > div a,
 .job-grid a {
     display: inline-block;
@@ -250,7 +249,7 @@ body > div a,
     box-shadow: 0 4px 10px rgba(255, 145, 199, 0.4);
     transition: all 0.3s ease;
     font-size: 1.1em;
-    flex-shrink: 0; /* ADDED: Prevents button from shrinking */
+    flex-shrink: 0; /
 }
 
 body > div a:hover,
@@ -260,17 +259,17 @@ body > div a:hover,
     box-shadow: 0 6px 15px rgba(224, 91, 164, 0.5);
 }
 
-/* Paragraph styling */
+/* p style in job box card */
 .job-grid > div p {
     font-size: 1em;
     line-height: 1.7;
     color: #8b5a7d;
     text-align: center;
     margin-top: 15px;
-    flex-grow: 1; /* ADDED: Allows paragraph to take remaining space, pushing content to align evenly */
+    flex-grow: 1; 
 }
 
-/* Responsive Design */
+/* Media Tag comp */
 @media (max-width: 1024px) {
     .job-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -290,20 +289,20 @@ body > div a:hover,
         font-size: 1em;
     }
     
-    /* ADDED: Adjust min-height for h1 on smaller screens */
+    
     .job-grid > div h1 {
         min-height: auto;
     }
 }
 
-/* iPhone specific adjustments */
+/* phone Media Tag */
 @media (max-width: 430px) {
     body > div {
         margin: 50px 20px;
     }
     
     .job-grid {
-        gap: 20px; /* REMOVED: margin override - uses inherited margin */
+        gap: 20px; 
     }
     
     body > div:first-child {
